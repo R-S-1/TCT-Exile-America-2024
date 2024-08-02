@@ -12146,8 +12146,8 @@ endingPicker = (out, totv, aa, quickstats) => {
                 }, 100);
             }
     return "<h3>ISLANDER WAVE DROWNS DALMAU</h3><p><li>\"</i>I was brought up to never lie. Sure, I have. But in the final mix, the lies I've told are far outweighed by the truths I've lived.<i>\" - Kelsey Grammer</p><p>This is an astonishing victory! As the final votes are tallied, it quickly becomes apparent that you’ve won a landslide victory. If there were any doubts about your candidacy before, they’ve been wiped out by a performance not equalled since the 1988 election. </p>Whether it was your own appeal, the NPP’s disaster year or Dalmau’s inability to control his campaign, the result is clear. You now stand nigh unopposed in your dreams of  facilitating \"government of the people, for the people, by the people\". </p>The time has come for you to stamp your vision on the country. Let the chips fall where they may!"
-    } else if (quickstats[1] >= 45) {
-        if (quickstats[1] >= 45) {
+    } else if (aa[0].candidate == 200) {
+        if (used != true) {
             setInterval(function () {
                 used = true;
                 imgg = document.getElementsByClassName("person_image")[0];
@@ -12156,8 +12156,8 @@ endingPicker = (out, totv, aa, quickstats) => {
                 }
             }, 100);
         }
-    return "<h3>Back to You</h3><p><i>\"Every boy who grew up when I grew up was told that they could be president if they wanted to be…\"</i></p><p>After Padilla's failed runs, some said that the PB was a spent force, doomed to a slow death alongside its Anglo hard-core. Now you've proven the doubters wrong and shown that a Virgin Islander can win where the hand-picked <i>\"Future of the Party\"</i> failed.</p><p>Your presidency is sure to see you lock horns with the Pan-Greens in the legislature and disgruntled factions in your own party, but you're dictating from a position of strength. Cross-Caribbean relations, the <i>\"Constitutional Question\"</i> and the dream of a renewed \"Jaguar Economy\" all await your consideration."
-} else if (quickstats[1] >= 40) {
+    return "<h3>Back to You</h3><p><i>\"Every boy who grew up when I grew up was told that they could be president if they wanted to be…\"</i></p><p>After Padilla's failed runs, some said that the PB was a spent force, doomed to a slow death alongside its Anglo hard-core. Now you've proven the doubters wrong and shown that a Virgin Islander can win where the hand-picked <i>\"Future of the Party\"</i> failed.</p><p>Your presidency is sure to see you lock horns with the Pan-Greens in the legislature and disgruntled factions in your own party, but you're dictating from a position of strength. Cross-Caribbean relations, the <i>\"Constitutional Question\"</i> and the dream of a renewed <i>\"Jaguar Economy\"</i> all await your consideration."
+} else if (aa[0].candidate == 201) {
     if (used != true) {
         setInterval(function () {
             used = true;
