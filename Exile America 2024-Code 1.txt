@@ -350,7 +350,7 @@ campaignTrail_temp.election_json = [
 					"winning_electoral_vote_number":270,
 					"advisor_url":"https://i.imgur.com/a7IpHtm.png",
 					"recommended_reading":"",
-					"has_visits":1,
+					"has_visits":0,
 					"no_electoral_majority_image":"../static/images/2012-no-majority.jpg"
 					}
 				}
@@ -363,7 +363,7 @@ campaignTrail_temp.temp_election_list = [
 					"display_year":"2024"
 				}
 			];
-campaignTrail_temp.credits = "SREF & Ben. Additional credit to Decstar for the music player, Nina & Calgar for information on complex features and Rubix for help troubleshooting";
+campaignTrail_temp.credits = "SREF & Ben. Additional credit to Decstar for the music player, Nina, Killeritch & Calgar for information on complex features and Rubix for help troubleshooting";
 campaignTrail_temp.global_parameter_json = [
 				{"model":"campaign_trail.global_parameter",
 				"pk":1,

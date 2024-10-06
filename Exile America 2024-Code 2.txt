@@ -640,6 +640,54 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 5075,
+			"fields": {
+				"question": 10220,
+				"description": "So called \"Golden Passports\" are a disgrace. Citizenship should be treasured and earned through toil and time, not sold on the market. My administration will fight against citizenship-through-investment schemes."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5076,
+			"fields": {
+				"question": 10220,
+				"description": "The blatant sale of citizenship is obviously something to be condemned, but investment can also signal real interest in being a part of the nation. We should not tar all these programs with the same brush."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5077,
+			"fields": {
+				"question": 10220,
+				"description": "If a country chooses to allow people to become part by investing into its future, that's just pragmatism. Why should we oppose the exercise of sovereignty on philosophical grounds?"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5078,
+			"fields": {
+				"question": 10221,
+				"description": "Is he insane? Break off contact and report this encounter to the FBI immediately."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5079,
+			"fields": {
+				"question": 10221,
+				"description": "Break off contact and pretend this never happened."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5080,
+			"fields": {
+				"question": 10221,
+				"description": "O’Malley could be a very useful ally. Let's see what we can do for him."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5083,
 			"fields": {
 				"question": 1025,
@@ -9449,6 +9497,66 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 3043,
+			"fields": {
+				"answer": 5075,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 3044,
+			"fields": {
+				"answer": 5076,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 3045,
+			"fields": {
+				"answer": 5077,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.01
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30460,
+			"fields": {
+				"answer": 5078,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.02
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30461,
+			"fields": {
+				"answer": 5079,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.002
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30462,
+			"fields": {
+				"answer": 5080,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.015
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3047,
 			"fields": {
 				"answer": 5083,
@@ -10652,6 +10760,96 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_issue",
+			"pk": 25850,
+			"fields": {
+				"answer": 5075,
+				"issue": 104,
+				"issue_score": 0.25,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25851,
+			"fields": {
+				"answer": 5075,
+				"issue": 103,
+				"issue_score": 0.2,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25852,
+			"fields": {
+				"answer": 5075,
+				"issue": 102,
+				"issue_score": 0.15,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25853,
+			"fields": {
+				"answer": 5076,
+				"issue": 104,
+				"issue_score": -0.05,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25854,
+			"fields": {
+				"answer": 5076,
+				"issue": 103,
+				"issue_score": -0.05,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25855,
+			"fields": {
+				"answer": 5076,
+				"issue": 102,
+				"issue_score": -0.15,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25856,
+			"fields": {
+				"answer": 5077,
+				"issue": 104,
+				"issue_score": -0.1,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25857,
+			"fields": {
+				"answer": 5077,
+				"issue": 103,
+				"issue_score": -0.1,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25858,
+			"fields": {
+				"answer": 5077,
+				"issue": 102,
+				"issue_score": -0.25,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
 			"pk": 25960,
 			"fields": {
 				"answer": 5086,
@@ -11317,6 +11515,17 @@
 			"affected_candidate": 200, 
 			"state_multiplier": 0.02
 			}
+		},
+		{
+		"model": "campaign_trail.answer_score_state", 
+		"pk": 304620, 
+		"fields": {
+			"answer": 5080, 
+			"state": 20794, 
+			"candidate": 200, 
+			"affected_candidate": 200, 
+			"state_multiplier": 0.05
+			}
 		}
 	]
 
@@ -11715,6 +11924,60 @@
 				"answer": 5074,
 				"candidate": 200,
 				"answer_feedback": "Light industry might benefit from state aid, but this promises a return to the bad old days of autarky."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25580,
+			"fields": {
+				"answer": 5075,
+				"candidate": 200,
+				"answer_feedback": "Don't burn all your bridges with the sector, they have deep pockets and deeper influence."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25581,
+			"fields": {
+				"answer": 5076,
+				"candidate": 200,
+				"answer_feedback": "Anyone can see that this is an arbitrary distinction, but this is the safe answer."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25582,
+			"fields": {
+				"answer": 5077,
+				"candidate": 200,
+				"answer_feedback": "Have you been reading New England Radical literature lately? This is quite a bold stance."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25583,
+			"fields": {
+				"answer": 5078,
+				"candidate": 200,
+				"answer_feedback": "Reporting the encounter just raises the question of why he would come to you in the first place. Someone in the FBI leaks your report and the press jump on it like vultures."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25584,
+			"fields": {
+				"answer": 5079,
+				"candidate": 200,
+				"answer_feedback": "Bury it. Deep."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25585,
+			"fields": {
+				"answer": 5080,
+				"candidate": 200,
+				"answer_feedback": "It takes a lot of string pulling and favour trading, but you make it happen. Soon after, \"an anonymous donor\" makes an eyewatering donation to your campaign warchest."
 			}
 		},
 		{
@@ -12122,6 +12385,49 @@
 	applyTooltipsToObject(campaignTrail_temp.questions_json);
 	applyTooltipsToObject(campaignTrail_temp.answers_json);
 	applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+
+e.cyoa = true;
+
+var american_trilogy_answers = 0;
+
+function tunnel(new_q){
+	return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
+}  
+
+questionSheath = [
+{'model': 'campaign_trail.question', 'pk': 10220, 'fields': {'priority': 1, 'description': 'One of the most controversial parts of the services sector is the so-called \"passport trade\", where San Juan based law firms facilitate the acquisition of 2nd nationalities by questionable figures using citizenship by investment schemes in Puerto Rico and other states. The practice is routinely condemned by both the PB and NPP, but has persisted due to intense lobbying. Will you make a statement on the issue?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10221, 'fields': {'priority': 1, 'description': 'Your campaign has been approached by Russian fixer Dimitry Kochenov, who is trying to arrange the acquisition of American citizenship by his client. At first, this seemed like a standard request to tip the scales, until he revealed the client. No less than former Mid-Atlantic president Martin O’Malley, who is currently residing in exile avoiding extradition on corruption charges by the new Mid-Atlantic government. Are we really willing to get involved in a foreign dispute like this?', 'likelihood': 1}},
+]
+
+getQuestionFromPk = function (pk) {
+  let index = questionSheath.map((f) => f.pk).indexOf(pk);
+  if (index < 0) {
+    return false;
+  }
+  return questionSheath[index];
+};
+
+cyoAdventure = function (a) {
+    ans = e.player_answers[e.player_answers.length - 1]
+	console.log("ans is:")
+	console.log(ans)
+	 if (ans === 5072 ) {
+        e.questions_json.splice(16, 0 , getQuestionFromPk(10220))
+        e.global_parameter_json[0].fields.question_count++
+        american_trilogy_answers++
+        console.log("golden passport 1")   
+        console.log("american_trilogy_answers count:")
+        console.log(american_trilogy_answers)
+    }
+	if (ans === 5077 ) {
+        e.questions_json.splice(20, 0 , getQuestionFromPk(10221))
+        e.global_parameter_json[0].fields.question_count++
+        american_trilogy_answers++
+        console.log("golden passport 2")   
+        console.log("american_trilogy_answers count:")
+        console.log(american_trilogy_answers)
+    }
+};
 
 campaignTrail_temp.multiple_endings=true
 endingPicker = (out, totv, aa, quickstats) => {
