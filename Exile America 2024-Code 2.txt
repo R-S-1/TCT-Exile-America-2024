@@ -432,6 +432,22 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 50311,
+			"fields": {
+				"question": 10223,
+				"description": "This would be a massive boon to national security. We just need to make sure the independentists don't find out, or they'll crucify us."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 50312,
+			"fields": {
+				"question": 10223,
+				"description": "If it looks too good to be true, it probably is. Use the dirt, but let's avoid getting enmeshed in foreign espionage."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5033,
 			"fields": {
 				"question": 1012,
@@ -484,6 +500,22 @@
 			"fields": {
 				"question": 1014,
 				"description": "The establishment have mismanaged ties with the mainland for decades. I'm the only who can offer a reset of cross-Caribbean relations!"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5044,
+			"fields": {
+				"question": 10224,
+				"description": "Opportunity strikes and we will answer. This is only the first step towards a more united America!"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5045,
+			"fields": {
+				"question": 10224,
+				"description": "Generations of Americans fought for the dream of re-union. I will not sell their sacrifice cheaply!"
 			}
 		},
 		{
@@ -547,7 +579,7 @@
 			"pk": 5063,
 			"fields": {
 				"question": 1020,
-				"description": "I'm a patriot and that's what matters. I'm for the United States and I'm for the PB.."
+				"description": "I'm a patriot and that's what matters. I'm for the United States and I'm for the PB."
 			}
 		},
 		{
@@ -764,6 +796,30 @@
 			"fields": {
 				"question": 1027,
 				"description": "If Dalmau attacks me for being in the pocket of the \"Exile Establishment\", I can give as good as I get."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5093,
+			"fields": {
+				"question": 10222,
+				"description": "This is exactly the kind of opportunity we should be pursuing. Let's work on making this deal a reality."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5094,
+			"fields": {
+				"question": 10222,
+				"description": "What he's proposing is a little too ambitious. Let's see if we can work on a smaller deal that allows our businesses to create manufacturing and other lower skill jobs in the South, while taking advantage of their human capital."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 5095,
+			"fields": {
+				"question": 10222,
+				"description": "Is he seriously asking that I sell out our agricultural sector so we can ship over a few pacemakers? Not a chance."
 			}
 		},
 		{
@@ -9367,6 +9423,26 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30181,
+			"fields": {
+				"answer": 50311,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30182,
+			"fields": {
+				"answer": 50312,
+				"candidate": 200,
+				"affected_candidate": 201,
+				"global_multiplier": -0.015
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3020,
 			"fields": {
 				"answer": 5035,
@@ -9643,6 +9719,36 @@
 				"candidate": 200,
 				"affected_candidate": 200,
 				"global_multiplier": -0.002
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 3056,
+			"fields": {
+				"answer": 5093,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.002
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 3057,
+			"fields": {
+				"answer": 5094,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.003
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30571,
+			"fields": {
+				"answer": 5094,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.005
 			}
 		},
 		{
@@ -10400,6 +10506,26 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_issue",
+			"pk": 25310,
+			"fields": {
+				"answer": 5044,
+				"issue": 100,
+				"issue_score": -0.4,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25311,
+			"fields": {
+				"answer": 5045,
+				"issue": 103,
+				"issue_score": -0.3,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
 			"pk": 2545,
 			"fields": {
 				"answer": 5051,
@@ -10935,6 +11061,46 @@
 				"answer": 51140,
 				"issue": 104,
 				"issue_score": -0.2,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26005,
+			"fields": {
+				"answer": 5093,
+				"issue": 102,
+				"issue_score": -0.45,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26006,
+			"fields": {
+				"answer": 5093,
+				"issue": 100,
+				"issue_score": -0.25,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26007,
+			"fields": {
+				"answer": 5094,
+				"issue": 102,
+				"issue_score": -0.25,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26008,
+			"fields": {
+				"answer": 5095,
+				"issue": 102,
+				"issue_score": 0.3,
 				"issue_importance": 2
 			}
 		},
@@ -11730,6 +11896,24 @@
 		},
 		{
 			"model": "campaign_trail.answer_feedback",
+			"pk": 25311,
+			"fields": {
+				"answer": 50311,
+				"candidate": 200,
+				"answer_feedback": "After a follow-up meeting, one of your staffers is picked up by the FBI, but quickly released. You end up spinning things in your favour."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25312,
+			"fields": {
+				"answer": 50312,
+				"candidate": 200,
+				"answer_feedback": "You use the dirt to great effect and Dalmau has to sideline one of his best staffers for the foreseeable future."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
 			"pk": 2533,
 			"fields": {
 				"answer": 5033,
@@ -11789,6 +11973,24 @@
 				"answer": 5043,
 				"candidate": 200,
 				"answer_feedback": "This is strong Americanist stuff, but means little to Boricua voters."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25401,
+			"fields": {
+				"answer": 5044,
+				"candidate": 200,
+				"answer_feedback": "You are spotted leaving the CS diplomatic office. Media speculation immediately takes on a fervour pitch."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25402,
+			"fields": {
+				"answer": 5045,
+				"candidate": 200,
+				"answer_feedback": "Your team releases a non-specific statement about never surrendering American sovereignity."
 			}
 		},
 		{
@@ -12068,6 +12270,33 @@
 				"answer": 5092,
 				"candidate": 200,
 				"answer_feedback": "There's no reason to go on the defensive when you've got such an easy line of attack."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 2577,
+			"fields": {
+				"answer": 5093,
+				"candidate": 200,
+				"answer_feedback": "With the plan sketched out, your campaign releases a triumphant press release promising a new future for Puerto Rico. Farmers are not pleased about you planning a trade policy to the countryside's clear detriment. Independentist rage at a candidate seemingly conducting an independent foreign policy is volcanic."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 2577,
+			"fields": {
+				"answer": 5094,
+				"candidate": 200,
+				"answer_feedback": "You forward your reduced plan and Crist's team reluctantly accepts. Announcing the plan to the chamber of commerce meets with approval, even if it's somewhat muted."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 2577,
+			"fields": {
+				"answer": 5095,
+				"candidate": 200,
+				"answer_feedback": "Crist is dissapointed, but you take the opportunity to declare you will never sell the jíbaros out."
 			}
 		},
 		{
@@ -12396,7 +12625,11 @@ function tunnel(new_q){
 
 questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10220, 'fields': {'priority': 1, 'description': 'One of the most controversial parts of the services sector is the so-called \"passport trade\", where San Juan based law firms facilitate the acquisition of 2nd nationalities by questionable figures using citizenship by investment schemes in Puerto Rico and other states. The practice is routinely condemned by both the PB and NPP, but has persisted due to intense lobbying. Will you make a statement on the issue?', 'likelihood': 1}},
-{'model': 'campaign_trail.question', 'pk': 10221, 'fields': {'priority': 1, 'description': 'Your campaign has been approached by Russian fixer Dimitry Kochenov, who is trying to arrange the acquisition of American citizenship by his client. At first, this seemed like a standard request to tip the scales, until he revealed the client. No less than former Mid-Atlantic president Martin O’Malley, who is currently residing in exile avoiding extradition on corruption charges by the new Mid-Atlantic government. Are we really willing to get involved in a foreign dispute like this?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10221, 'fields': {'priority': 1, 'description': 'The campaign has been approached by Russian fixer Dimitry Kochenov, who is trying to arrange the acquisition of American citizenship by his client. At first, this seemed like a standard request to tip the scales, until he revealed the client. No less than former Mid-Atlantic president Martin O’Malley, who is currently residing in exile, avoiding extradition on corruption charges by the new Mid-Atlantic government. Are we really willing to get involved in a foreign dispute like this?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10222, 'fields': {'priority': 1, 'description': 'Your statements in support of further trade with the former USSA have been well received in the CS, where president Charlie Crist is attempting to increase FDI and promises to improve quality of life by modernizing the healthcare system. Through proxies in Richmond and San Juan, he has begun to sketch out a free trade deal that would open the CS to our pharma and tech sector. Unfortunately, the quid pro quo would be opening up to Southern produce in direct competition with our own farmers. Shall we indicate interest in the proposal?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10223, 'fields': {'priority': 1, 'description': 'We’ve been approached by CS Intelligence’s point-man in Puerto Rico. Citing the dangers of terrorism and radicalism, his government proposes that San Juan and Richmond develop a provisional framework for intelligence sharing, to be implemented in our administration. As a show of good faith, he also comes with some dirt on a prominent Dalmau staffer, so we know what they can do for us.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10224, 'fields': {'priority': 1, 'description': 'In light of your previous statements about normalising cross-Caribbean relations, the unofficial ambassador of the CS in Puerto Rico has requested a meeting. He comes with a mandate from his country’s executive to establish a road map to full diplomatic recognition ahead of your likely victory. While this presents obvious problems to our legitimate vision of representing the entire US, it would allow for full recognition of US citizenship by a mainland government and open the road to restoration of property to the exiles. Can we really make such a bargain?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10225, 'fields': {'priority': 1, 'description': 'Arlington', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -12424,6 +12657,38 @@ cyoAdventure = function (a) {
         e.global_parameter_json[0].fields.question_count++
         american_trilogy_answers++
         console.log("golden passport 2")   
+        console.log("american_trilogy_answers count:")
+        console.log(american_trilogy_answers)
+    }
+	if (ans === 5097 ) {
+        e.questions_json.splice(21, 0 , getQuestionFromPk(10222))
+        e.global_parameter_json[0].fields.question_count++
+        american_trilogy_answers++
+        console.log("CS trade")   
+        console.log("american_trilogy_answers count:")
+        console.log(american_trilogy_answers)
+    }
+	if (ans === 5031 ) {
+        e.questions_json.splice(10, 0 , getQuestionFromPk(10223))
+        e.global_parameter_json[0].fields.question_count++
+        american_trilogy_answers++
+        console.log("Cross-Caribbean intel")   
+        console.log("american_trilogy_answers count:")
+        console.log(american_trilogy_answers)
+    }
+	if ( ans === 5043) {
+        e.questions_json.splice(23, 0 , getQuestionFromPk(10224))
+        e.global_parameter_json[0].fields.question_count++
+        american_trilogy_answers++
+        console.log("Diplo recognition")   
+        console.log("american_trilogy_answers count:")
+        console.log(american_trilogy_answers)
+    }
+	if ( american_trilogy_answers === 5 ) {
+        e.questions_json.splice(25, 0 , getQuestionFromPk(10225))
+        e.global_parameter_json[0].fields.question_count++
+        american_trilogy_answers++
+        console.log("Arlington meeting")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
     }
