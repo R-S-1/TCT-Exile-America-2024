@@ -520,6 +520,14 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 5046,
+			"fields": {
+				"question": 10225,
+				"description": "Ideology may divide us, but we all believe in an American dream."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5048,
 			"fields": {
 				"question": 1016,
@@ -9453,6 +9461,16 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 3020,
+			"fields": {
+				"answer": 5046,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3024,
 			"fields": {
 				"answer": 5048,
@@ -10520,6 +10538,36 @@
 			"fields": {
 				"answer": 5045,
 				"issue": 103,
+				"issue_score": -0.3,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25312,
+			"fields": {
+				"answer": 5046,
+				"issue": 100,
+				"issue_score": -0.5,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25313,
+			"fields": {
+				"answer": 5046,
+				"issue": 101,
+				"issue_score": -0.3,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25314,
+			"fields": {
+				"answer": 5046,
+				"issue": 102,
 				"issue_score": -0.3,
 				"issue_importance": 2
 			}
@@ -11995,6 +12043,15 @@
 		},
 		{
 			"model": "campaign_trail.answer_feedback",
+			"pk": 25402,
+			"fields": {
+				"answer": 5046,
+				"candidate": 200,
+				"answer_feedback": "The next morning, you shock the Americas with a joint press conference revealing your plans. It's safe to say that generations of Americans will remember this moment."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
 			"pk": 2541,
 			"fields": {
 				"answer": 5048,
@@ -12615,6 +12672,8 @@
 	applyTooltipsToObject(campaignTrail_temp.answers_json);
 	applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
+AmericanTrilogy = false;
+
 e.cyoa = true;
 
 var american_trilogy_answers = 0;
@@ -12629,7 +12688,7 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10222, 'fields': {'priority': 1, 'description': 'Your statements in support of further trade with the former USSA have been well received in the CS, where president Charlie Crist is attempting to increase FDI and promises to improve quality of life by modernizing the healthcare system. Through proxies in Richmond and San Juan, he has begun to sketch out a free trade deal that would open the CS to our pharma and tech sector. Unfortunately, the quid pro quo would be opening up to Southern produce in direct competition with our own farmers. Shall we indicate interest in the proposal?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10223, 'fields': {'priority': 1, 'description': 'We’ve been approached by CS Intelligence’s point-man in Puerto Rico. Citing the dangers of terrorism and radicalism, his government proposes that San Juan and Richmond develop a provisional framework for intelligence sharing, to be implemented in our administration. As a show of good faith, he also comes with some dirt on a prominent Dalmau staffer, so we know what they can do for us.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10224, 'fields': {'priority': 1, 'description': 'In light of your previous statements about normalising cross-Caribbean relations, the unofficial ambassador of the CS in Puerto Rico has requested a meeting. He comes with a mandate from his country’s executive to establish a road map to full diplomatic recognition ahead of your likely victory. While this presents obvious problems to our legitimate vision of representing the entire US, it would allow for full recognition of US citizenship by a mainland government and open the road to restoration of property to the exiles. Can we really make such a bargain?', 'likelihood': 1}},
-{'model': 'campaign_trail.question', 'pk': 10225, 'fields': {'priority': 1, 'description': 'Arlington', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10225, 'fields': {'priority': 1, 'description': 'Under the cover of night, you leave your home in St. Thomas and head to Bourne Airport, where you board a private jet headed to the mainland. After your touchdown in Arlington, you are quickly bundled into a limo with tinted windows and driven out to the designated meeting point.<br><br>By the time you reach the cemetery, Crist and O’Malley are already standing to greet you in front of the Hemicycle. With no need for introductions, you begin discussions in earnest.', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -12692,6 +12751,11 @@ cyoAdventure = function (a) {
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
     }
+	if (ans === 5046) {
+		AmericanTrilogy = true;
+		console.log("American Trilogy ending")
+      
+    }
 };
 
 campaignTrail_temp.multiple_endings=true
@@ -12706,7 +12770,28 @@ endingPicker = (out, totv, aa, quickstats) => {
         //out = "win", "loss", or "tie" for your candidate
         //totv = total votes in entire election
         //aa = all final overall results data
-        if (quickstats[1] >= 60) {
+		
+		
+	music_end = function() {
+    document.getElementById("campaigntrailmusic").pause()
+    document.getElementById("music_player").style.display = "none"
+	}
+	
+	music_end()
+	
+	if (AmericanTrilogy) { 
+		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/lxKCN2y.jpeg";
+                    }
+                }, 100);
+            }
+	return "<h3>Glory, Glory, Hallelujah!</h3><p>\"<i>\Even when opportunity knocks, a man still has to get up off his seat and open the door.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"O'Malley election confirmed by Supreme Court after stand-off, tensions begin to dissipate.\"</i> - <b>San Juan Star</b></p><p><i>\"Texans express interest in free movement, common market.\"</i> - <b>Caribbean Business</b></p><p><i>\"CS opens Restitution Tribunal, émigrés begin filing claims.\"</i> - <b>Christian Science Monitor</b></p>At 12:00, 4 July, 2025, the pall bearers lift the casket from its funerary carriage and carry it to its final destination.<p>After more than 80 years in exile, Douglas MacArthur has at last arrived in Arlington. With more than half the heads of state in America in attendance and an aged Arthur MacArthur watching from a wheelchair, Presidents Grammer and Crist raise their respective flags to flutter in the summer breeze.<p>The old United States may be buried, but for the first time since the Civil War, its people seem to be on the road to another union."
+	} else  if (quickstats[1] >= 60) {
             if (used != true) {
                 setInterval(function () {
                     used = true;
@@ -12716,8 +12801,8 @@ endingPicker = (out, totv, aa, quickstats) => {
                     }
                 }, 100);
             }
-    return "<h3>ISLANDER WAVE DROWNS DALMAU</h3><p><li>\"</i>I was brought up to never lie. Sure, I have. But in the final mix, the lies I've told are far outweighed by the truths I've lived.<i>\" - Kelsey Grammer</p><p>This is an astonishing victory! As the final votes are tallied, it quickly becomes apparent that you’ve won a landslide victory. If there were any doubts about your candidacy before, they’ve been wiped out by a performance not equalled since the 1988 election. </p>Whether it was your own appeal, the NPP’s disaster year or Dalmau’s inability to control his campaign, the result is clear. You now stand nigh unopposed in your dreams of  facilitating \"government of the people, for the people, by the people\". </p>The time has come for you to stamp your vision on the country. Let the chips fall where they may!"
-    } else if (aa[0].candidate == 200) {
+    return "<h3>ISLANDER WAVE DROWNS DALMAU</h3><p><li>\"</i>I was brought up to never lie. Sure, I have. But in the final mix, the lies I've told are far outweighed by the truths I've lived.\"</i> - Kelsey Grammer</p><p>This is an astonishing victory! As the final votes are tallied, it quickly becomes apparent that you’ve won a landslide victory. If there were any doubts about your candidacy before, they’ve been wiped out by a performance not equalled since the 1988 election. </p>Whether it was your own appeal, the NPP’s disaster year or Dalmau’s inability to control his campaign, the result is clear. You now stand nigh unopposed in your dreams of  facilitating \"government of the people, for the people, by the people\". </p>The time has come for you to stamp your vision on the country. Let the chips fall where they may!"
+	} else if (aa[0].candidate == 200) {
         if (used != true) {
             setInterval(function () {
                 used = true;
@@ -12728,7 +12813,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             }, 100);
         }
     return "<h3>Back to You</h3><p><i>\"Every boy who grew up when I grew up was told that they could be president if they wanted to be…\"</i></p><p>After Padilla's failed runs, some said that the PB was a spent force, doomed to a slow death alongside its Anglo hard-core. Now you've proven the doubters wrong and shown that a Virgin Islander can win where the hand-picked <i>\"Future of the Party\"</i> failed.</p><p>Your presidency is sure to see you lock horns with the Pan-Greens in the legislature and disgruntled factions in your own party, but you're dictating from a position of strength. Cross-Caribbean relations, the <i>\"Constitutional Question\"</i> and the dream of a renewed <i>\"Jaguar Economy\"</i> all await your consideration."
-} else if (aa[0].candidate == 201) {
+	} else if (aa[0].candidate == 201) {
     if (used != true) {
         setInterval(function () {
             used = true;
@@ -12739,7 +12824,31 @@ endingPicker = (out, totv, aa, quickstats) => {
         }, 100);
     }
     return "<h3>The Same Bunch of Clowns?</h3><p>Apologizes are pointless, regrets come too late. Despite the NPP's shambolic performance, Dalmau has managed to crawl to a victory. Your situation in the party is unclear, but without many other options, they might be forced to run you again. If not, you can always retire to the Virgin Islands and slip into a guaranteed place as St. Thomas' local bigman until you are next needed.</p><p>You can't keep the Patriot Bloc out San Juan forever, and when they get in, you'll be back in La Fortaleza with all your buddies."
-  } else {
+	} else {
     return "<h3>Hey!</h3>Something broke, probably."
   }
 }
+
+setMusic = (url, override = false) => {
+    let aud;
+    if ($("#music_player")[0]) {
+      $("#music_player")[0].remove();
+    } 
+    if (override && document.getElementById("endingAudio")) {
+      aud = document.getElementById("endingAudio");
+      aud.src = url;
+      aud.play();
+      return 0;
+    }
+    if (document.getElementById("endingAudio")) {
+      return 0;
+    }
+    aud = document.createElement("audio");
+    aud.id = "endingAudio";
+    aud.src = url;
+    aud.loop = false;
+    aud.autoplay = true;
+    document.body.appendChild(aud);
+    aud.play();
+    return 0;
+  }
