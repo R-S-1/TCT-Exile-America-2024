@@ -12699,6 +12699,10 @@ getQuestionFromPk = function (pk) {
   return questionSheath[index];
 };
 
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk);
+}
+
 cyoAdventure = function (a) {
     ans = e.player_answers[e.player_answers.length - 1]
 	console.log("ans is:")
@@ -12772,8 +12776,7 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5046) {
 		AmericanTrilogy = true;
-		console.log("American Trilogy ending")
-      
+		console.log("American Trilogy ending") 
     }
 };
 
@@ -12809,7 +12812,7 @@ endingPicker = (out, totv, aa, quickstats) => {
                     }
                 }, 100);
             }
-	return "<h3>Glory, Glory, Hallelujah!</h3><p>\"<i>\Even when opportunity knocks, a man still has to get up off his seat and open the door.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"O'Malley election confirmed by Supreme Court after stand-off, tensions begin to dissipate.\"</i> - <b>San Juan Star</b></p><p><i>\"Texans express interest in free movement, common market.\"</i> - <b>Caribbean Business</b></p><p><i>\"CS opens Restitution Tribunal, émigrés begin filing claims.\"</i> - <b>Christian Science Monitor</b></p><p>At 12:00, 4 July, 2025, the pall bearers lift the casket from its funerary carriage and carry it to its final destination.<p>After more than 80 years in exile, Douglas MacArthur has at last arrived in Arlington. With more than half the heads of state in America in attendance and an aged Arthur MacArthur watching from a wheelchair, Presidents Grammer and Crist raise their respective flags to flutter in the summer breeze.<p>The old United States may be buried, but for the first time since the Civil War, its people seem to be on the road to another union."
+	return "<h3>Glory, Glory, Hallelujah!</h3><p>\"<i>\Even when opportunity knocks, a man still has to get up off his seat and open the door.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"O'Malley election confirmed by Supreme Court after stand-off, tensions begin to dissipate.\"</i> - <b>San Juan Star</b></p><p><i>\"Texans express interest in free movement, common market.\"</i> - <b>International Herald Tribune</b></p><p><i>\"CS opens Restitution Tribunal, émigrés begin filing claims.\"</i> - <b>Christian Science Monitor</b></p><p>At 12:00, 4 July, 2025, the pall bearers lift the casket from its funerary carriage and carry it to its final destination.<p>After more than 80 years in exile, Douglas MacArthur has at last arrived in Arlington. With more than half the heads of state in America in attendance and an aged Arthur MacArthur watching from a wheelchair, Presidents Grammer and Crist raise their respective flags to flutter in the summer breeze.<p>The old United States may be buried, but for the first time since the Civil War, its people seem to be on the road to another union."
 	} else  if (quickstats[1] >= 60) {
             if (used != true) {
                 setInterval(function () {
