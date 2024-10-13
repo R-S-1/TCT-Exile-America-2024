@@ -12968,6 +12968,11 @@ cyoAdventure = function (a) {
 		console.log("zaibatsu_deal_answers count:")	
 		console.log(zaibatsu_deal_answers)		
     }
+	// && : and
+	// || : or
+	// ! : not
+	// () : enclosure
+	// if (zaibatsu_deal_answers === 3 && <some other value>) 
 	if ( zaibatsu_deal_answers === 3 ) {
         e.questions_json.splice(22, 0 , getQuestionFromPk(10272))
         e.global_parameter_json[0].fields.question_count++
