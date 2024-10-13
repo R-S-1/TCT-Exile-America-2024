@@ -330,6 +330,10 @@ tooltipList = [
 		{
           "name": "Oye Como Va",
           "url": "https://od.lk/s/Nl8yMDcwMTM2NDNf/Tito_Puente_-_Oye_Como_Va_Official_Audio.mp3"
+        },
+		{
+          "name": "La Borinqueña",
+          "url": "https://od.lk/s/Nl8yMDk2NzI1MTdf/La_Borinque%C3%B1a-1860s_Arrangement.mp3"
         }
       ]
     },

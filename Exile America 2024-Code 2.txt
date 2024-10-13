@@ -896,6 +896,22 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 50981,
+			"fields": {
+				"question": 10291,
+				"description": "This deal is a godsend for the countryside. We accept."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 50982,
+			"fields": {
+				"question": 10291,
+				"description": "We won't give up our regulatory autonomy to foreigners!"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5101,
 			"fields": {
 				"question": 1030,
@@ -1150,7 +1166,7 @@
 				"name": "Vega Alta",
 				"abbr": "PR_VA",
 				"electoral_votes": 1,
-				"popular_votes": 55,617,
+				"popular_votes": 55617,
 				"poll_closing_time": 120,
 				"winner_take_all_flg": 1,
 				"election": 20
@@ -9883,6 +9899,26 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30591,
+			"fields": {
+				"answer": 50981,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.008
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30592,
+			"fields": {
+				"answer": 50982,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3062,
 			"fields": {
 				"answer": 5102,
@@ -10930,7 +10966,7 @@
 			"fields": {
 				"answer": 5073,
 				"issue": 102,
-				"issue_score": -0.25,
+				"issue_score": 0.2,
 				"issue_importance": 2
 			}
 		},
@@ -10980,7 +11016,7 @@
 			"fields": {
 				"answer": 5074,
 				"issue": 102,
-				"issue_score": 0,
+				"issue_score": -0.1,
 				"issue_importance": 1
 			}
 		},
@@ -11261,6 +11297,46 @@
 				"answer": 5100,
 				"issue": 102,
 				"issue_score": 0.4,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26071,
+			"fields": {
+				"answer": 50981,
+				"issue": 102,
+				"issue_score": 0.2,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26071,
+			"fields": {
+				"answer": 50981,
+				"issue": 103,
+				"issue_score": -0.2,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26071,
+			"fields": {
+				"answer": 50982,
+				"issue": 102,
+				"issue_score": 0.4,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26071,
+			"fields": {
+				"answer": 50982,
+				"issue": 104,
+				"issue_score": 0.2,
 				"issue_importance": 2
 			}
 		},
@@ -12562,6 +12638,24 @@
 		},
 		{
 			"model": "campaign_trail.answer_feedback",
+			"pk": 25821,
+			"fields": {
+				"answer": 50981,
+				"candidate": 200,
+				"answer_feedback": "Enviromentalists complain that you're selling out the countryside to agribusiness, but many farmers are pleased."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25822,
+			"fields": {
+				"answer": 50982,
+				"candidate": 200,
+				"answer_feedback": "You make a point of presenting yourself as the smallholders' advocate at your next speech, alluding to \"foreigners trying to buy the country\"."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
 			"pk": 2585,
 			"fields": {
 				"answer": 5101,
@@ -12843,11 +12937,13 @@
 var AmericanTrilogyPrecondition = false;
 var AmericanTrilogy = false;
 var ZaibatsuDeal = false;
+var MitteleuropaAgriDeal = false;
 
 e.cyoa = true;
 
 var american_trilogy_answers = 0;
 var zaibatsu_deal_answers = 0;
+var mitteleuropa_agrideal_answers = 0;
 
 function tunnel(new_q){
 	return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
@@ -12862,6 +12958,7 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10225, 'fields': {'priority': 1, 'description': 'Under the cover of night, you leave your home in St. Thomas and head to Bourne Airport, where you board a private jet headed to the mainland. After your touchdown in Arlington, you are quickly bundled into a limo with tinted windows and driven out to the designated meeting point.<br><br>By the time you reach the cemetery, Crist and O’Malley are already standing to greet you in front of the Hemicycle. With no need for introductions, you begin discussions in earnest.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10271, 'fields': {'priority': 1, 'description': 'Pacifican President Newsom has responded warmly to your statement, calling you \"a true friend\" and extending an invitation to visit Sacramento.<br><br>While accepting would burnish your stateman’s credentials, it is unlikely that you will gain anything more from the experience. What do you say?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10272, 'fields': {'priority': 1, 'description': 'It turns out that the nice young man from Sacramento is the head of the PEA’s Caribbean department. Having flown over to San Juan to make this fact known to you, he also comes with a proposal. <br><br>One of the lesser Zaibatsus is looking to expand its operations and is currently in search of a partner country. With our developed human capital, high tech industry and state support for business, we seem to be a perfect match. The deal would allow our domestic industry to tap into their vast production capacity and allow our best firms to sell their products in the Pacific Rim (under licence, of course). What do we say?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10291, 'fields': {'priority': 1, 'description': 'We’ve received a visit from the Mitteleuropeans. It turns out that the Commission has been interested in negotiating a one-size-fits-all treaty relating to Puerto Rico agricultural products for a while, but have run into a wall with the NPP activists in charge at USDA.<br><br>They propose that we adhere to Mitteleuropean standards on agriculture and in return, we will receive \"most favoured nation\" on our products as well as a developmental aid package targeted at rural areas. The only catch is that this will upset some treehuggers. What do we say?', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -12977,6 +13074,32 @@ cyoAdventure = function (a) {
         console.log("zaibatsu_deal_offer") 
 		console.log("zaibatsu_deal_answers count")   
 		console.log(zaibatsu_deal_answers)
+    }
+	if (ans === 5073) {
+        mitteleuropa_agrideal_answers++
+		console.log("Uncontroversial Economics")
+		console.log("mitteleuropa_agrideal_answers count:")
+        console.log(mitteleuropa_agrideal_answers)
+    }
+	if (ans === 5098) {
+        mitteleuropa_agrideal_answers++
+		console.log("Mitteleuropa Trade")
+		console.log("mitteleuropa_agrideal_answers count:")
+        console.log(mitteleuropa_agrideal_answers)
+    }
+	if (ans === 5042) {
+        mitteleuropa_agrideal_answers++
+		console.log("YIMBY")
+		console.log("mitteleuropa_agrideal_answers count:")
+        console.log(mitteleuropa_agrideal_answers)
+    }
+	if ( ( mitteleuropa_agrideal_answers === 3 ) && !MitteleuropaAgriDeal ) {
+        e.questions_json.splice(22, 0 , getQuestionFromPk(10291))
+        e.global_parameter_json[0].fields.question_count++
+		MitteleuropaAgriDeal = true;
+        console.log("mitteleuropa_agrideal_offer") 
+		console.log("mitteleuropa_agrideal_answers count")   
+		console.log(mitteleuropa_agrideal_answers)
     }
 };
 
