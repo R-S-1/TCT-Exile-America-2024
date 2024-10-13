@@ -12939,6 +12939,7 @@ cyoAdventure = function (a) {
         console.log("Arlington meeting")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
+		american_trilogy_answers--
     }
 	if (ans === 5046) {
 		AmericanTrilogy = true;

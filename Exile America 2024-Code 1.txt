@@ -334,11 +334,25 @@ tooltipList = [
 		{
           "name": "Oye Como Va",
           "url": "https://od.lk/s/Nl8yMDcwMTM2NDNf/Tito_Puente_-_Oye_Como_Va_Official_Audio.mp3"
-        },
+        }
+      ]
+    },
+	1: {
+      name: "Patriot Radio",
+      tracklist: [
+		{
+          "name": "The Star-Spangled Banner",
+          "url": "https://od.lk/s/Nl8yMDY3OTc0ODVf/1996_ASG__Kelsey_Grammer_performs_national_anthem.mp3"
+        }
+      ]
+    },
+	2: {
+      name: "Radio Popular",
+      tracklist: [
 		{
           "name": "Infinita Tristeza",
           "url": "https://od.lk/s/Nl8yMDY3OTc0ODZf/Manu_Chao_-_Infinita_Tristeza_Official_Audio.mp3"
-        },
+        }
       ]
     }
   }
