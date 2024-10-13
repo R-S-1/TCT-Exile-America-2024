@@ -49,7 +49,7 @@
 			"pk": 1006,
 			"fields": {
 				"priority": 2,
-				"description": "The Federal Bureau of Investigation's investigation into the \"Telegram Leaks\" scandal has concluded. The bureau severely reprimanded former New Progressive candidate Ricardo Rosselló's conduct but refused to indict anyone. Any comments?",
+				"description": "The Federal Bureau of Investigation’s investigation into the \"Telegram Leaks\" scandal has concluded. The bureau severely reprimanded former New Progressive candidate Ricardo Rosselló’s conduct but refused to indict anyone. Any comments?",
 				"likelihood": 1
 			}
 		},
@@ -85,7 +85,7 @@
 			"pk": 1011,
 			"fields": {
 				"priority": 5,
-				"description": "White Supremacists claiming allegiance to the Northwestern Front carried out a terror attack in San Francisco's Japantown today. More than 100 people are reported dead and many more are grievously injured. What will you say?",
+				"description": "White Supremacists claiming allegiance to the Northwestern Front carried out a terror attack in San Francisco’s Japantown today. More than 100 people are reported dead and many more are grievously injured. What will you say?",
 				"likelihood": 1
 			}
 		},
@@ -103,7 +103,7 @@
 			"pk": 1038,
 			"fields": {
 				"priority": 8,
-				"description": "The press have begun to call your running mate \"the Good News Girl\" for her propensity to put a positive spin on things and emphasis on Christian values. Some of your advisors think it might be time to pivot towards social issues and attacking the New Progressives' record. What do you say?",
+				"description": "The press have begun to call your running mate \"the Good News Girl\" for her propensity to put a positive spin on things and emphasis on Christian values. Some of your advisors think it might be time to pivot towards social issues and attacking the New Progressives’ record. What do you say?",
 				"likelihood": 1
 			}
 		},
@@ -148,7 +148,7 @@
 			"pk": 1027,
 			"fields": {
 				"priority": 10,
-				"description": "Dalmau's potential links to radicals and foreign governments have been a recurring issue ahead of the election. Are there any particular attacks you'd like to level against him?",
+				"description": "Dalmau’s potential links to radicals and foreign governments have been a recurring issue ahead of the election. Are there any particular attacks you’d like to level against him?",
 				"likelihood": 1
 			}
 		},
@@ -220,7 +220,7 @@
 			"pk": 1035,
 			"fields": {
 				"priority": -3,
-				"description": "Hundreds of pages of messages from Ricardo Rosselló's Telegram group chat have been leaked. They demonstrate a coordinated effort to control the media, attack political opponents and give classified information and lucrative contracts to people outside the government. What will you say now?",
+				"description": "Hundreds of pages of messages from Ricardo Rosselló’s Telegram group chat have been leaked. They demonstrate a coordinated effort to control the media, attack political opponents and give classified information and lucrative contracts to people outside the government. What will you say now?",
 				"likelihood": 1
 			}
 		},
@@ -229,7 +229,7 @@
 			"pk": 1034,
 			"fields": {
 				"priority": -3,
-				"description": "Hundreds more pages of messages from Ricardo Rosselló's Telegram group chat have been leaked. They reflect a \"bro\" culture characterized by racism, homophobia, misogyny as well as messages making fun of Hurricane Maria victims and espousing elitist views. What would you like to say?",
+				"description": "Hundreds more pages of messages from Ricardo Rosselló’s Telegram group chat have been leaked. They reflect a \"bro\" culture characterized by racism, homophobia, misogyny as well as messages making fun of Hurricane Maria victims and espousing elitist views. What would you like to say?",
 				"likelihood": 1
 			}
 		},
@@ -267,7 +267,7 @@
 			"pk": 5001,
 			"fields": {
 				"question": 1000,
-				"description": "No modern candidacy can work without social media, but if passions are running high, I'll tone it down. Let's do the circuit with the establishment press and let that be the end of it."
+				"description": "No modern candidacy can work without social media, but if passions are running high, I’ll tone it down. Let’s do the circuit with the establishment press and let that be the end of it."
 			}
 		},
 		{
@@ -275,7 +275,7 @@
 			"pk": 5002,
 			"fields": {
 				"question": 1000,
-				"description": "How about nothing? I'm the most interesting thing that's happened since the Appalachian Wars. If I stop posting, the press will run an article asking what happened by the next morning!"
+				"description": "How about nothing? I’m the most interesting thing that’s happened since the Appalachian Wars. If I stop posting, the press will run an article asking what happened by the next morning!"
 			}
 		},
 		{
@@ -283,7 +283,7 @@
 			"pk": 5003,
 			"fields": {
 				"question": 1001,
-				"description": "Karen is a patriot through-and-through. Her father spent a lifetime fighting for America and he raised her to do just the same. We'll need that kind of spirit in the Grammer administration."
+				"description": "Karen is a patriot through-and-through. Her father spent a lifetime fighting for America and he raised her to do just the same. We’ll need that kind of spirit in the Grammer administration."
 			}
 		},
 		{
@@ -291,7 +291,7 @@
 			"pk": 5004,
 			"fields": {
 				"question": 1001,
-				"description": "Karen's track record in the John McCain administration and at State was just fantastic. It's a rough world out there and we need a strong foreign policy if we're going to make it. Karen is the only woman for that job."
+				"description": "Karen’s track record in the John McCain administration and at State was just fantastic. It’s a rough world out there and we need a strong foreign policy if we’re going to make it. Karen is the only woman for that job."
 			}
 		},
 		{
@@ -299,7 +299,7 @@
 			"pk": 5013,
 			"fields": {
 				"question": 1006,
-				"description": "You couldn't ask for stronger evidence of the FBI colluding with the NPP. The only solution left is a substantial reform of the intelligence services."
+				"description": "You couldn’t ask for stronger evidence of the FBI colluding with the NPP. The only solution left is a substantial reform of the intelligence services."
 			}
 		},
 		{
@@ -307,7 +307,7 @@
 			"pk": 5014,
 			"fields": {
 				"question": 1006,
-				"description": "Rosselló's behaviour was a matter of concern for all Americans, irrespective of their political affiliation. A slap on the wrist is simply not good enough!"
+				"description": "Rosselló’s behaviour was a matter of concern for all Americans, irrespective of their political affiliation. A slap on the wrist is simply not good enough!"
 			}
 		},
 		{
@@ -331,7 +331,7 @@
 			"pk": 5017,
 			"fields": {
 				"question": 1007,
-				"description": "Don't tell me I was right about the do-nothing NPP! I want results! Grammer's FBI will ensure security!"
+				"description": "Don’t tell me I was right about the do-nothing NPP! I want results! Grammer’s FBI will ensure security!"
 			}
 		},
 		{
@@ -363,7 +363,7 @@
 			"pk": 5021,
 			"fields": {
 				"question": 1008,
-				"description": "Tristani's time in office has been a catastrophe. Corruption, natural disasters, crime. Dalmau means more of the same. I am the only one who can lead the country down a better path."
+				"description": "Tristani’s time in office has been a catastrophe. Corruption, natural disasters, crime. Dalmau means more of the same. I am the only one who can lead the country down a better path."
 			}
 		},
 		{
@@ -371,7 +371,7 @@
 			"pk": 5022,
 			"fields": {
 				"question": 1008,
-				"description": "My time as vice president shows that I've got the mettle for leadership. Why should the voters support sleazebags like Rosselló and nobodies like Dalmau when they know I've got what it takes?"
+				"description": "My time as vice president shows that I’ve got the mettle for leadership. Why should the voters support sleazebags like Rosselló and nobodies like Dalmau when they know I’ve got what it takes?"
 			}
 		},
 		{
@@ -379,7 +379,7 @@
 			"pk": 5023,
 			"fields": {
 				"question": 1008,
-				"description": "I'm a patriot who has always fought for the national interest. Dalmau is the last-minute choice of a desperate party and affiliated with the extreme left. He could easily be an agent of the Mexicans or British."
+				"description": "I’m a patriot who has always fought for the national interest. Dalmau is the last-minute choice of a desperate party and affiliated with the extreme left. He could easily be an agent of the Mexicans or British."
 			}
 		},
 		{
@@ -395,7 +395,7 @@
 			"pk": 5025,
 			"fields": {
 				"question": 1009,
-				"description": "Dalmau is a bolt from the blue, thrown by a desperate party mired in the midst of the worst scandal in the island's history. Any vote against me is a vote for those Tricky Ricky and those crooks!"
+				"description": "Dalmau is a bolt from the blue, thrown by a desperate party mired in the midst of the worst scandal in the island’s history. Any vote against me is a vote for those Tricky Ricky and those crooks!"
 			}
 		},
 		{
@@ -403,7 +403,7 @@
 			"pk": 5026,
 			"fields": {
 				"question": 1009,
-				"description": "I'm a man of principle and faith, who understands what it means to be a jíbaro. I promise to protect local rights, local farmers and local fishing grounds!"
+				"description": "I’m a man of principle and faith, who understands what it means to be a jíbaro. I promise to protect local rights, local farmers and local fishing grounds!"
 			}
 		},
 		{
@@ -432,10 +432,42 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 50321,
+			"fields": {
+				"question": 10271,
+				"description": "Let’s take him up on his offer. Maybe some of the pizzaz of Tinseltown will rub off on me."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 50322,
+			"fields": {
+				"question": 10271,
+				"description": "It would make for a nice photo-op, but not much more. The campaign needs me here, hitting the bricks and talking to voters."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 50323,
+			"fields": {
+				"question": 10272,
+				"description": "Japanese industry working together with American ingenuity. A perfect match!"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 50324,
+			"fields": {
+				"question": 10272,
+				"description": "Our businesses won’t part with their intellectual property so easily. I have to decline."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 50311,
 			"fields": {
 				"question": 10223,
-				"description": "This would be a massive boon to national security. We just need to make sure the independentists don't find out, or they'll crucify us."
+				"description": "This would be a massive boon to national security. We just need to make sure the independentists don’t find out, or they’ll crucify us."
 			}
 		},
 		{
@@ -443,7 +475,7 @@
 			"pk": 50312,
 			"fields": {
 				"question": 10223,
-				"description": "If it looks too good to be true, it probably is. Use the dirt, but let's avoid getting enmeshed in foreign espionage."
+				"description": "If it looks too good to be true, it probably is. Use the dirt, but let’s avoid getting enmeshed in foreign espionage."
 			}
 		},
 		{
@@ -499,7 +531,7 @@
 			"pk": 5043,
 			"fields": {
 				"question": 1014,
-				"description": "The establishment have mismanaged ties with the mainland for decades. I'm the only who can offer a reset of cross-Caribbean relations!"
+				"description": "The establishment have mismanaged ties with the mainland for decades. I’m the only who can offer a reset of cross-Caribbean relations!"
 			}
 		},
 		{
@@ -539,7 +571,7 @@
 			"pk": 5049,
 			"fields": {
 				"question": 1016,
-				"description": "We <b>still</b> don't know the full details on the Telegram scandal. What exactly is the government sitting on?"
+				"description": "We <b>still</b> don’t know the full details on the Telegram scandal. What exactly is the government sitting on?"
 			}
 		},
 		{
@@ -547,7 +579,7 @@
 			"pk": 5050,
 			"fields": {
 				"question": 1016,
-				"description": "No accusation is too low, no attack too harsh when you're dealing with these crooks. I'm fighting for the nation and if I have to be a brat doing it, so be it!"
+				"description": "No accusation is too low, no attack too harsh when you’re dealing with these crooks. I’m fighting for the nation and if I have to be a brat doing it, so be it!"
 			}
 		},
 		{
@@ -555,7 +587,7 @@
 			"pk": 5051,
 			"fields": {
 				"question": 1016,
-				"description": "I'm not going to stop talking about how we've got no foreign policy, trade looks like it's going to crater and how there are militias in Colombia better equipped than our armed forces!"
+				"description": "I’m not going to stop talking about how we’ve got no foreign policy, trade looks like it’s going to crater and how there are militias in Colombia better equipped than our armed forces!"
 			}
 		},
 		{
@@ -563,7 +595,7 @@
 			"pk": 5060,
 			"fields": {
 				"question": 1019,
-				"description": "Padilla lost against Tristani. Twice. He failed to capitalize on the NP government spending like there's no tomorrow and now criticizes me for my proposals to trade with the Mainland. Are you sure he's not working for the other team? "
+				"description": "Padilla lost against Tristani. Twice. He failed to capitalize on the NP government spending like there’s no tomorrow and now criticizes me for my proposals to trade with the Mainland. Are you sure he’s not working for the other team? "
 			}
 		},
 		{
@@ -571,7 +603,7 @@
 			"pk": 5061,
 			"fields": {
 				"question": 1019,
-				"description": "He's the one who has to decide if he's going to play ball or not. If he doesn't feel like supporting the party, then let him sulk."
+				"description": "He’s the one who has to decide if he’s going to play ball or not. If he doesn’t feel like supporting the party, then let him sulk."
 			}
 		},
 		{
@@ -579,7 +611,7 @@
 			"pk": 5062,
 			"fields": {
 				"question": 1019,
-				"description": "The Reds over at Claridad want us to fight so they can bray about \"the slaves of capital fighting amongst themselves\". Alejandro is a patriot, even if we disagree on some issues. I'd be glad to hear him speak."
+				"description": "The Reds over at Claridad want us to fight so they can bray about \"the slaves of capital fighting amongst themselves\". Alejandro is a patriot, even if we disagree on some issues. I’d be glad to hear him speak."
 			}
 		},
 		{
@@ -587,7 +619,7 @@
 			"pk": 5063,
 			"fields": {
 				"question": 1020,
-				"description": "I'm a patriot and that's what matters. I'm for the United States and I'm for the PB."
+				"description": "I’m a patriot and that’s what matters. I’m for the United States and I’m for the PB."
 			}
 		},
 		{
@@ -595,7 +627,7 @@
 			"pk": 5064,
 			"fields": {
 				"question": 1020,
-				"description": "What kind of bribes are they fishing for now? Special pensions for officers? If that's what it takes, then so be it."
+				"description": "What kind of bribes are they fishing for now? Special pensions for officers? If that’s what it takes, then so be it."
 			}
 		},
 		{
@@ -603,7 +635,7 @@
 			"pk": 5065,
 			"fields": {
 				"question": 1020,
-				"description": "I demonstrated my loyalty under McCain and showed that I'm a party man with my choice for running mate. My goal is to keep the NPP from destroying our country."
+				"description": "I demonstrated my loyalty under McCain and showed that I’m a party man with my choice for running mate. My goal is to keep the NPP from destroying our country."
 			}
 		},
 		{
@@ -611,7 +643,7 @@
 			"pk": 5066,
 			"fields": {
 				"question": 1020,
-				"description": "I'm not interested in being a stooge for the Exile Establishment or ostentatiously cozying up to the rosary prayers. My policies are those of an independent candidate who knows what the people want."
+				"description": "I’m not interested in being a stooge for the Exile Establishment or ostentatiously cozying up to the rosary prayers. My policies are those of an independent candidate who knows what the people want."
 			}
 		},
 		{
@@ -619,7 +651,7 @@
 			"pk": 5067,
 			"fields": {
 				"question": 1021,
-				"description": "I'm totally opposed to drug use. We need to take this poison off our streets and make sure that users know that what they're doing is wrong, with harsh penalties for possession."
+				"description": "I’m totally opposed to drug use. We need to take this poison off our streets and make sure that users know that what they’re doing is wrong, with harsh penalties for possession."
 			}
 		},
 		{
@@ -627,7 +659,7 @@
 			"pk": 5068,
 			"fields": {
 				"question": 1021,
-				"description": "I'm in favour of strict controls as a rule. Drugs are a danger we need to control, even if there might a few exceptions for the softest of the soft."
+				"description": "I’m in favour of strict controls as a rule. Drugs are a danger we need to control, even if there might a few exceptions for the softest of the soft."
 			}
 		},
 		{
@@ -643,7 +675,7 @@
 			"pk": 5070,
 			"fields": {
 				"question": 1021,
-				"description": "We need to reach out to drug users and show compassion, their rehabilitation is key. We also can't treat the possessors and users of soft drugs like we would a dealer."
+				"description": "We need to reach out to drug users and show compassion, their rehabilitation is key. We also can’t treat the possessors and users of soft drugs like we would a dealer."
 			}
 		},
 		{
@@ -651,7 +683,7 @@
 			"pk": 5071,
 			"fields": {
 				"question": 1022,
-				"description": "This country was built on the back of enterprise and exports. We need to focus on the high-tech manufacturing that's kept us rich for so long."
+				"description": "This country was built on the back of enterprise and exports. We need to focus on the high-tech manufacturing that’s kept us rich for so long."
 			}
 		},
 		{
@@ -667,7 +699,7 @@
 			"pk": 5073,
 			"fields": {
 				"question": 1022,
-				"description": "Economic policy is a divisive issue. Better to focus on the New Progressives' track record. Anti-corruption and anti-Socialism, that'll win the day."
+				"description": "Economic policy is a divisive issue. Better to focus on the New Progressives’ track record. Anti-corruption and anti-Socialism, that’ll win the day."
 			}
 		},
 		{
@@ -675,7 +707,7 @@
 			"pk": 5074,
 			"fields": {
 				"question": 1022,
-				"description": "You know, I've been misrepresented in the press. I've never said that I'm opposed to high tariffs or producing at home wherever possible."
+				"description": "You know, I’ve been misrepresented in the press. I’ve never said that I’m opposed to high tariffs or producing at home wherever possible."
 			}
 		},
 		{
@@ -699,7 +731,7 @@
 			"pk": 5077,
 			"fields": {
 				"question": 10220,
-				"description": "If a country chooses to allow people to become part by investing into its future, that's just pragmatism. Why should we oppose the exercise of sovereignty on philosophical grounds?"
+				"description": "If a country chooses to allow people to become part by investing into its future, that’s just pragmatism. Why should we oppose the exercise of sovereignty on philosophical grounds?"
 			}
 		},
 		{
@@ -723,7 +755,7 @@
 			"pk": 5080,
 			"fields": {
 				"question": 10221,
-				"description": "O’Malley could be a very useful ally. Let's see what we can do for him."
+				"description": "O’Malley could be a very useful ally. Let’s see what we can do for him."
 			}
 		},
 		{
@@ -755,7 +787,7 @@
 			"pk": 5086,
 			"fields": {
 				"question": 1026,
-				"description": "If we're going to compete with Dalmau, we need to run a modern campaign. That means expanding beyond our use of the press and television into alternative media and the internet to speak directly to the voters."
+				"description": "If we’re going to compete with Dalmau, we need to run a modern campaign. That means expanding beyond our use of the press and television into alternative media and the internet to speak directly to the voters."
 			}
 		},
 		{
@@ -787,7 +819,7 @@
 			"pk": 5090,
 			"fields": {
 				"question": 1027,
-				"description": "Here's this guy that almost no one had heard of before the election. Now he's running in Ricky's place and managing to mobilize huge sums of money for rallies and campaigning. Don't you think that's a little odd?"
+				"description": "Here’s this guy that almost no one had heard of before the election. Now he’s running in Ricky’s place and managing to mobilize huge sums of money for rallies and campaigning. Don’t you think that’s a little odd?"
 			}
 		},
 		{
@@ -795,7 +827,7 @@
 			"pk": 5091,
 			"fields": {
 				"question": 1027,
-				"description": "They found this low-profile guy to run in Ricky's place at the last minute, with zero fanfare. Now we're supposed to believe he's got nothing to do with the current government and he'll clean up San Juan?"
+				"description": "They found this low-profile guy to run in Ricky’s place at the last minute, with zero fanfare. Now we’re supposed to believe he’s got nothing to do with the current government and he’ll clean up San Juan?"
 			}
 		},
 		{
@@ -811,7 +843,7 @@
 			"pk": 5093,
 			"fields": {
 				"question": 10222,
-				"description": "This is exactly the kind of opportunity we should be pursuing. Let's work on making this deal a reality."
+				"description": "This is exactly the kind of opportunity we should be pursuing. Let’s work on making this deal a reality."
 			}
 		},
 		{
@@ -819,7 +851,7 @@
 			"pk": 5094,
 			"fields": {
 				"question": 10222,
-				"description": "What he's proposing is a little too ambitious. Let's see if we can work on a smaller deal that allows our businesses to create manufacturing and other lower skill jobs in the South, while taking advantage of their human capital."
+				"description": "What he’s proposing is a little too ambitious. Let’s see if we can work on a smaller deal that allows our businesses to create manufacturing and other lower skill jobs in the South, while taking advantage of their human capital."
 			}
 		},
 		{
@@ -835,7 +867,7 @@
 			"pk": 5097,
 			"fields": {
 				"question": 1029,
-				"description": "I promise to bring us closer to the mainland and pursue the fantastic opportunities that exist there. I won't neglect a huge market just to appease a few chauvinists!"
+				"description": "I promise to bring us closer to the mainland and pursue the fantastic opportunities that exist there. I won’t neglect a huge market just to appease a few chauvinists!"
 			}
 		},
 		{
@@ -843,7 +875,7 @@
 			"pk": 5098,
 			"fields": {
 				"question": 1029,
-				"description": "We need to focus on drawing closer to Germany. They've always been our traditional partner in Europe and Mitteleuropa is the one of the most dynamic economies in the world!"
+				"description": "We need to focus on drawing closer to Germany. They’ve always been our traditional partner in Europe and Mitteleuropa is the one of the most dynamic economies in the world!"
 			}
 		},
 		{
@@ -851,7 +883,7 @@
 			"pk": 5099,
 			"fields": {
 				"question": 1029,
-				"description": "We need to make sure the Puerto Rico Industrial Development Company is capable of meeting the challenges of the modern day. SMEs, real-estate development and start-ups are just some of the ways we'll keep the US a world-leading economy!"
+				"description": "We need to make sure the Puerto Rico Industrial Development Company is capable of meeting the challenges of the modern day. SMEs, real-estate development and start-ups are just some of the ways we’ll keep the US a world-leading economy!"
 			}
 		},
 		{
@@ -859,7 +891,7 @@
 			"pk": 5100,
 			"fields": {
 				"question": 1029,
-				"description": "I promise to keep the pension system and make sure it keeps place with inflation. We're also going to take a hard look at rural development and build a system that works for the smallholder."
+				"description": "I promise to keep the pension system and make sure it keeps place with inflation. We’re also going to take a hard look at rural development and build a system that works for the smallholder."
 			}
 		},
 		{
@@ -875,7 +907,7 @@
 			"pk": 5102,
 			"fields": {
 				"question": 1030,
-				"description": "I won't abandon the troops, but where claims of potential crimes by specific units or individuals arise, we're obliged to investigate. If -and only if- those claims are conclusively vindicated, we will of course act."
+				"description": "I won’t abandon the troops, but where claims of potential crimes by specific units or individuals arise, we’re obliged to investigate. If -and only if- those claims are conclusively vindicated, we will of course act."
 			}
 		},
 		{
@@ -883,7 +915,7 @@
 			"pk": 5111,
 			"fields": {
 				"question": 1033,
-				"description": "My minor cardiac incident when paddleboarding in no way reflects an inability to handle the stress of the office. My time in the political wilderness after being VP was stressful, but everything that doesn't kill us makes us stronger!"
+				"description": "My minor cardiac incident when paddleboarding in no way reflects an inability to handle the stress of the office. My time in the political wilderness after being VP was stressful, but everything that doesn’t kill us makes us stronger!"
 			}
 		},
 		{
@@ -899,7 +931,7 @@
 			"pk": 5113,
 			"fields": {
 				"question": 1033,
-				"description": "I did not sleep with my babysitter. The young woman's delay in pressing her claim against me and her later retraction are proof of this. I said from the outset and continue to say that there was never any basis for the allegations."
+				"description": "I did not sleep with my babysitter. The young woman’s delay in pressing her claim against me and her later retraction are proof of this. I said from the outset and continue to say that there was never any basis for the allegations."
 			}
 		},
 		{
@@ -923,7 +955,7 @@
 			"pk": 5115,
 			"fields": {
 				"question": 1034,
-				"description": "If it were up to Rosselló, we wouldn't be spending a dime on rebuilding after Hurricane Maria. How can the NPP be trusted to keep rural voters' interests at heart?"
+				"description": "If it were up to Rosselló, we wouldn’t be spending a dime on rebuilding after Hurricane Maria. How can the NPP be trusted to keep rural voters’ interests at heart?"
 			}
 		},
 		{
@@ -931,7 +963,7 @@
 			"pk": 5116,
 			"fields": {
 				"question": 1034,
-				"description": "If it's really true that foreign agents are behind these leaks, then we shouldn't be too credulous. Who knows what their agenda might be?"
+				"description": "If it’s really true that foreign agents are behind these leaks, then we shouldn’t be too credulous. Who knows what their agenda might be?"
 			}
 		},
 		{
@@ -947,7 +979,7 @@
 			"pk": 5118,
 			"fields": {
 				"question": 1035,
-				"description": "If you're a Dalmau supporter, you should be outraged that your candidate is associating with such a man! If this is how Ricky operates, how do you know Dalmau isn't a mere puppet in their schemes?"
+				"description": "If you’re a Dalmau supporter, you should be outraged that your candidate is associating with such a man! If this is how Ricky operates, how do you know Dalmau isn’t a mere puppet in their schemes?"
 			}
 		},
 		{
@@ -955,7 +987,7 @@
 			"pk": 5119,
 			"fields": {
 				"question": 1035,
-				"description": "This vindicates what I've been saying. The NPP are a mafia organization and Tristani is either blind or playing Godmother behind the scenes. Only Grammer can clean up San Juan!"
+				"description": "This vindicates what I’ve been saying. The NPP are a mafia organisation and Tristani is either blind or playing Godmother behind the scenes. Only Grammer can clean up San Juan!"
 			}
 		},
 		{
@@ -963,7 +995,7 @@
 			"pk": 5120,
 			"fields": {
 				"question": 1035,
-				"description": "Isn't it just a bit too convenient that these leaks dropped right before the election? My instinct tells me that whoever released this information has ulterior motives. How do we know this isn't a Mexican or Midwestern bait-and-switch?"
+				"description": "Isn’t it just a bit too convenient that these leaks dropped right before the election? My instinct tells me that whoever released this information has ulterior motives. How do we know this isn’t a Mexican or Midwestern bait-and-switch?"
 			}
 		},
 		{
@@ -971,7 +1003,7 @@
 			"pk": 5121,
 			"fields": {
 				"question": 1036,
-				"description": "I'm glad to see Dalmau was able to break his way through the NPP establishment to become candidate. It looks like he's not a mere strawman. Nevertheless, this just shows how his own party aren't standing behind him."
+				"description": "I’m glad to see Dalmau was able to break his way through the NPP establishment to become candidate. It looks like he’s not a mere strawman. Nevertheless, this just shows how his own party aren’t standing behind him."
 			}
 		},
 		{
@@ -979,7 +1011,7 @@
 			"pk": 5122,
 			"fields": {
 				"question": 1036,
-				"description": "My focus is on cleaning up San Juan. If Dalmau wants to join me against these crooks, then I'll see about finding him a cabinet job."
+				"description": "My focus is on cleaning up San Juan. If Dalmau wants to join me against these crooks, then I’ll see about finding him a cabinet job."
 			}
 		},
 		{
@@ -987,7 +1019,7 @@
 			"pk": 5123,
 			"fields": {
 				"question": 1037,
-				"description": "I'm not one to forget my roots. We're going to do a rally on Saint Thomas and pay my respects to the people who first made my political career."
+				"description": "I’m not one to forget my roots. We’re going to do a rally on Saint Thomas and pay my respects to the people who first made my political career."
 			}
 		},
 		{
@@ -995,7 +1027,7 @@
 			"pk": 5124,
 			"fields": {
 				"question": 1037,
-				"description": "We're going south. Ponce, Juana Diaz and Yauco are areas where we need to make it clear that I support industry and our strong exports."
+				"description": "We’re going south. Ponce, Juana Diaz and Yauco are areas where we need to make it clear that I support industry and our strong exports."
 			}
 		},
 		{
@@ -1003,7 +1035,7 @@
 			"pk": 5125,
 			"fields": {
 				"question": 1037,
-				"description": "West to Mayagüez. They were hit hard by Maria and they need to know I'm serious about continued reconstruction."
+				"description": "West to Mayagüez. They were hit hard by Maria and they need to know I’m serious about continued reconstruction."
 			}
 		},
 		{
@@ -1019,7 +1051,7 @@
 			"pk": 5127,
 			"fields": {
 				"question": 1038,
-				"description": "There's nothing wrong with being positive about life. I can't believe the press are asking for more pessimism in politics!"
+				"description": "There’s nothing wrong with being positive about life. I can’t believe the press are asking for more pessimism in politics!"
 			}
 		},
 		{
@@ -1027,7 +1059,7 @@
 			"pk": 5128,
 			"fields": {
 				"question": 1038,
-				"description": "Attacking a family woman like Karen for her faith is an absurd attack on believers and misogynistic to boot. We won't give these attacks any further attention."
+				"description": "Attacking a family woman like Karen for her faith is an absurd attack on believers and misogynistic to boot. We won’t give these attacks any further attention."
 			}
 		},
 		{
@@ -9431,6 +9463,46 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30191,
+			"fields": {
+				"answer": 50321,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.002
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30192,
+			"fields": {
+				"answer": 50322,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30193,
+			"fields": {
+				"answer": 50323,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30193,
+			"fields": {
+				"answer": 50324,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.008
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 30181,
 			"fields": {
 				"answer": 50311,
@@ -9763,7 +9835,7 @@
 			"model": "campaign_trail.answer_score_global",
 			"pk": 30571,
 			"fields": {
-				"answer": 5094,
+				"answer": 5095,
 				"candidate": 200,
 				"affected_candidate": 200,
 				"global_multiplier": 0.005
@@ -11624,6 +11696,66 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_issue",
+			"pk": 503211,
+			"fields": {
+				"answer": 50321,
+				"issue": 100,
+				"issue_score": -0.15,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 503212,
+			"fields": {
+				"answer": 50321,
+				"issue": 104,
+				"issue_score": -0.05,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 503213,
+			"fields": {
+				"answer": 50322,
+				"issue": 100,
+				"issue_score": -0.05,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 503214,
+			"fields": {
+				"answer": 50323,
+				"issue": 102,
+				"issue_score": -0.25,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 503215,
+			"fields": {
+				"answer": 50323,
+				"issue": 104,
+				"issue_score": -0.1,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 503216,
+			"fields": {
+				"answer": 50324,
+				"issue": 102,
+				"issue_score": 0.2,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
 			"pk": 2807,
 			"fields": {
 				"answer": 5035,
@@ -11804,7 +11936,7 @@
 			"fields": {
 				"answer": 5014,
 				"candidate": 200,
-				"answer_feedback": "Rosselló is the millstone around Dalmau's neck. You can't go wrong by bringing him up."
+				"answer_feedback": "Rosselló is the millstone around Dalmau’s neck. You can’t go wrong by bringing him up."
 			}
 		},
 		{
@@ -11813,7 +11945,7 @@
 			"fields": {
 				"answer": 5015,
 				"candidate": 200,
-				"answer_feedback": "Rosselló is the most hated Puerto Rican alive today. You don't have to go easy on him."
+				"answer_feedback": "Rosselló is the most hated Puerto Rican alive today. You don’t have to go easy on him."
 			}
 		},
 		{
@@ -11822,7 +11954,7 @@
 			"fields": {
 				"answer": 5016,
 				"candidate": 200,
-				"answer_feedback": "This lets you position yourself as a law and order candidate *and* attack your opponent."
+				"answer_feedback": "This lets you position yourself as a law and order candidate <b>and</b> attack your opponent."
 			}
 		},
 		{
@@ -11840,7 +11972,7 @@
 			"fields": {
 				"answer": 5018,
 				"candidate": 200,
-				"answer_feedback": "There *are* chauvinists in Dalmau's camp, but framing this as an ethnic issue will drive away rural Puerto Ricans who see themselves tarred as bigots."
+				"answer_feedback": "There *are* chauvinists in Dalmau’s camp, but framing this as an ethnic issue will drive away rural Puerto Ricans who see themselves tarred as bigots."
 			}
 		},
 		{
@@ -11849,7 +11981,7 @@
 			"fields": {
 				"answer": 5019,
 				"candidate": 200,
-				"answer_feedback": "Empathy is good, faith is better. Mormons aren't the only religious minority who think you can protect them better than Dalmau."
+				"answer_feedback": "Empathy is good, faith is better. Mormons aren’t the only religious minority who think you can protect them better than Dalmau."
 			}
 		},
 		{
@@ -11867,7 +11999,7 @@
 			"fields": {
 				"answer": 5021,
 				"candidate": 200,
-				"answer_feedback": "Attacking the New Progressives' record under Tristani is a safe bet. They've made too many mistakes for voters to not see your point."
+				"answer_feedback": "Attacking the New Progressives’ record under Tristani is a safe bet. They’ve made too many mistakes for voters to not see your point."
 			}
 		},
 		{
@@ -11876,7 +12008,7 @@
 			"fields": {
 				"answer": 5022,
 				"candidate": 200,
-				"answer_feedback": "It's a little coarse, but you still come off better suited for the office of POTUS than your opponent."
+				"answer_feedback": "It’s a little coarse, but you still come off better suited for the office of POTUS than your opponent."
 			}
 		},
 		{
@@ -11885,7 +12017,7 @@
 			"fields": {
 				"answer": 5023,
 				"candidate": 200,
-				"answer_feedback": "Fearmongering about infiltration might smack of the 70s, but with Dalmau a fringe figure till a few weeks ago, it's easy to imagine he has skeletons in his closet."
+				"answer_feedback": "Fearmongering about infiltration might smack of the 70s, but with Dalmau a fringe figure till a few weeks ago, it’s easy to imagine he has skeletons in his closet."
 			}
 		},
 		{
@@ -11903,7 +12035,7 @@
 			"fields": {
 				"answer": 5025,
 				"candidate": 200,
-				"answer_feedback": "Rosselló is still the New Progressives' Achilles heel, you can't go wrong by mentioning him."
+				"answer_feedback": "Rosselló is still the New Progressives’ Achilles heel, you can't go wrong by mentioning him."
 			}
 		},
 		{
@@ -11921,7 +12053,7 @@
 			"fields": {
 				"answer": 5030,
 				"candidate": 200,
-				"answer_feedback": "As the candidate of security, turmoil abroad can be a boon, not a hindrance. Just don't say as much."
+				"answer_feedback": "As the candidate of security, turmoil abroad can be a boon, not a hindrance. Just don’t say as much."
 			}
 		},
 		{
@@ -11939,7 +12071,43 @@
 			"fields": {
 				"answer": 5032,
 				"candidate": 200,
-				"answer_feedback": "Radical independentists gnash their teeth at the idea that Puerto Rico and the PSA share a cultural bond, but most of them aren't foolish enough to say anything."
+				"answer_feedback": "Radical independentists gnash their teeth at the idea that Puerto Rico and the PSA share a cultural bond, but most of them aren’t foolish enough to say anything."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25321,
+			"fields": {
+				"answer": 50321,
+				"candidate": 200,
+				"answer_feedback": "On the first day of your trip, you sit through an agonizingly long memorial event in Sacramento before taking a few photos with some C-list celebrities they probably picked up off the street. <br><br>The highlight of the trip is meeting a nice young man from the PEA secretariat, who addresses you in perfect Spanish before learning you are an Anglo."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25322,
+			"fields": {
+				"answer": 50322,
+				"candidate": 200,
+				"answer_feedback": "You tell Newsom that the campaign needs you at home. He records a short clip vaguely endorsing you which you share on the campaign’s social media, before getting back to real work."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25323,
+			"fields": {
+				"answer": 50323,
+				"candidate": 200,
+				"answer_feedback": "You get in touch with the Zaibatsu’s representatives and sketch out a plan that you lay out to the public at your next press conference. Reactions are positive, if surprised."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25324,
+			"fields": {
+				"answer": 50324,
+				"candidate": 200,
+				"answer_feedback": "You fob him off with a proposal to buy older generation electronics for distribution to deprived rural communities. He is obviously disappointed, but at least he didn’t come here for nothing."
 			}
 		},
 		{
@@ -12335,7 +12503,7 @@
 			"fields": {
 				"answer": 5093,
 				"candidate": 200,
-				"answer_feedback": "With the plan sketched out, your campaign releases a triumphant press release promising a new future for Puerto Rico. Farmers are not pleased about you planning a trade policy to the countryside's clear detriment. Independentist rage at a candidate seemingly conducting an independent foreign policy is volcanic."
+				"answer_feedback": "With the plan sketched out, your campaign releases a triumphant press release promising a new future for Puerto Rico. Farmers are not pleased about you planning a trade policy to the countryside's clear detriment. <br><br>Independentist rage at a candidate seemingly conducting an independent foreign policy is volcanic."
 			}
 		},
 		{
@@ -12677,6 +12845,7 @@ AmericanTrilogy = false;
 e.cyoa = true;
 
 var american_trilogy_answers = 0;
+var zaibatsu_deal_answers = 0;
 
 function tunnel(new_q){
 	return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
@@ -12689,6 +12858,8 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10223, 'fields': {'priority': 1, 'description': 'We’ve been approached by CS Intelligence’s point-man in Puerto Rico. Citing the dangers of terrorism and radicalism, his government proposes that San Juan and Richmond develop a provisional framework for intelligence sharing, to be implemented in our administration. As a show of good faith, he also comes with some dirt on a prominent Dalmau staffer, so we know what they can do for us.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10224, 'fields': {'priority': 1, 'description': 'In light of your previous statements about normalising cross-Caribbean relations, the unofficial ambassador of the CS in Puerto Rico has requested a meeting. He comes with a mandate from his country’s executive to establish a road map to full diplomatic recognition ahead of your likely victory. While this presents obvious problems to our legitimate vision of representing the entire US, it would allow for full recognition of US citizenship by a mainland government and open the road to restoration of property to the exiles. Can we really make such a bargain?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10225, 'fields': {'priority': 1, 'description': 'Under the cover of night, you leave your home in St. Thomas and head to Bourne Airport, where you board a private jet headed to the mainland. After your touchdown in Arlington, you are quickly bundled into a limo with tinted windows and driven out to the designated meeting point.<br><br>By the time you reach the cemetery, Crist and O’Malley are already standing to greet you in front of the Hemicycle. With no need for introductions, you begin discussions in earnest.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10271, 'fields': {'priority': 1, 'description': 'Pacifican President Newsom has responded warmly to your statement, calling you \"a true friend\" and extending an invitation to visit Sacramento.<br><br>While accepting would burnish your stateman’s credentials, it is unlikely that you will gain anything more from the experience. What do you say?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10272, 'fields': {'priority': 1, 'description': 'It turns out that the nice young man from Sacramento is the head of the PEA’s Caribbean department. Having flown over to San Juan to make this fact known to you, he also comes with a proposal. <br><br>One of the lesser Zaibatsus is looking to expand its operations and is currently in search of a partner country. With our developed human capital, high tech industry and state support for business, we seem to be a perfect match. The deal would allow our domestic industry to tap into their vast production capacity and allow our best firms to sell their products in the Pacific Rim (under licence, of course). What do we say?', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -12698,10 +12869,6 @@ getQuestionFromPk = function (pk) {
   }
   return questionSheath[index];
 };
-
-function getQuestionNumberFromPk(pk) {
-    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk);
-}
 
 cyoAdventure = function (a) {
     ans = e.player_answers[e.player_answers.length - 1]
@@ -12723,7 +12890,7 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5077 ) {
 		american_trilogy_answers++
-        console.log("O'Malley asylum")   
+        console.log("O’Malley asylum")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
     }
@@ -12762,14 +12929,13 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5044 ) {
 		american_trilogy_answers++
-        console.log("CS shared intel")   
+        console.log("CS diplomatic recognition")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
     }
 	if ( american_trilogy_answers === 4 ) {
         e.questions_json.splice(25, 0 , getQuestionFromPk(10225))
         e.global_parameter_json[0].fields.question_count++
-        american_trilogy_answers++
         console.log("Arlington meeting")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
@@ -12777,6 +12943,37 @@ cyoAdventure = function (a) {
 	if (ans === 5046) {
 		AmericanTrilogy = true;
 		console.log("American Trilogy ending") 
+    }
+	if (ans === 5032) {
+        console.log("Pacific States sympathy") 
+        e.questions_json.splice(7, 0 , getQuestionFromPk(10271))
+        e.global_parameter_json[0].fields.question_count++
+    }
+	if (ans === 50321) {
+		zaibatsu_deal_answers++
+        console.log("visited_sacramento")
+		console.log("zaibatsu_deal_answers count:")
+		console.log(zaibatsu_deal_answers)			
+    }
+	if (ans === 5071) {
+		zaibatsu_deal_answers++
+        console.log("hightech_economy")   
+		console.log("zaibatsu_deal_answers count:")	
+		console.log(zaibatsu_deal_answers)
+    }
+	if (ans === 5099) {
+		zaibatsu_deal_answers++
+        console.log("national_champions")  
+		console.log("zaibatsu_deal_answers count:")	
+		console.log(zaibatsu_deal_answers)		
+    }
+	if ( zaibatsu_deal_answers === 3 ) {
+        e.questions_json.splice(22, 0 , getQuestionFromPk(10272))
+        e.global_parameter_json[0].fields.question_count++
+		zaibatsu_deal_answers--
+        console.log("zaibatsu_deal_offer") 
+		console.log("zaibatsu_deal_answers count")   
+		console.log(zaibatsu_deal_answers)
     }
 };
 
@@ -12812,7 +13009,7 @@ endingPicker = (out, totv, aa, quickstats) => {
                     }
                 }, 100);
             }
-	return "<h3>Glory, Glory, Hallelujah!</h3><p>\"<i>\Even when opportunity knocks, a man still has to get up off his seat and open the door.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"O'Malley election confirmed by Supreme Court after stand-off, tensions begin to dissipate.\"</i> - <b>San Juan Star</b></p><p><i>\"Texans express interest in free movement, common market.\"</i> - <b>International Herald Tribune</b></p><p><i>\"CS opens Restitution Tribunal, émigrés begin filing claims.\"</i> - <b>Christian Science Monitor</b></p><p>At 12:00, 4 July, 2025, the pall bearers lift the casket from its funerary carriage and carry it to its final destination.<p>After more than 80 years in exile, Douglas MacArthur has at last arrived in Arlington. With more than half the heads of state in America in attendance and an aged Arthur MacArthur watching from a wheelchair, Presidents Grammer and Crist raise their respective flags to flutter in the summer breeze.<p>The old United States may be buried, but for the first time since the Civil War, its people seem to be on the road to another union."
+	return "<h3>Glory, Glory, Hallelujah!</h3><p>\"<i>\Even when opportunity knocks, a man still has to get up off his seat and open the door.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"O’Malley election confirmed by Supreme Court after stand-off, tensions begin to dissipate.\"</i> - <b>San Juan Star</b></p><p><i>\"Texans express interest in free movement, common market.\"</i> - <b>International Herald Tribune</b></p><p><i>\"CS opens Restitution Tribunal, émigrés begin filing claims.\"</i> - <b>Christian Science Monitor</b></p><p>At 12:00, 4 July, 2025, the pall bearers lift the casket from its funerary carriage and carry it to its final destination.<p>After more than 80 years in exile, Douglas MacArthur has at last arrived in Arlington. With more than half the heads of state in America in attendance and an aged Arthur MacArthur watching from a wheelchair, Presidents Grammer and Crist raise their respective flags to flutter in the summer breeze.<p>The old United States may be buried, but for the first time since the Civil War, its people seem to be on the road to another union."
 	} else  if (quickstats[1] >= 60) {
             if (used != true) {
                 setInterval(function () {
@@ -12823,7 +13020,7 @@ endingPicker = (out, totv, aa, quickstats) => {
                     }
                 }, 100);
             }
-    return "<h3>ISLANDER WAVE DROWNS DALMAU</h3><p><li>\"</i>I was brought up to never lie. Sure, I have. But in the final mix, the lies I've told are far outweighed by the truths I've lived.\"</i> - Kelsey Grammer</p><p>This is an astonishing victory! As the final votes are tallied, it quickly becomes apparent that you’ve won a landslide victory. If there were any doubts about your candidacy before, they’ve been wiped out by a performance not equalled since the 1988 election. </p>Whether it was your own appeal, the NPP’s disaster year or Dalmau’s inability to control his campaign, the result is clear. You now stand nigh unopposed in your dreams of  facilitating \"government of the people, for the people, by the people\". </p>The time has come for you to stamp your vision on the country. Let the chips fall where they may!"
+    return "<h3>ISLANDER WAVE DROWNS DALMAU</h3><p><li>\"</i>I was brought up to never lie. Sure, I have. But in the final mix, the lies I’ve told are far outweighed by the truths I’ve lived.\"</i> - Kelsey Grammer</p><p>This is an astonishing victory! As the final votes are tallied, it quickly becomes apparent that you’ve won a landslide victory. If there were any doubts about your candidacy before, they’ve been wiped out by a performance not equalled since the 1988 election. </p>Whether it was your own appeal, the NPP’s disaster year or Dalmau’s inability to control his campaign, the result is clear. You now stand nigh unopposed in your dreams of  facilitating \"government of the people, for the people, by the people\". </p>The time has come for you to stamp your vision on the country. Let the chips fall where they may!"
 	} else if (aa[0].candidate == 200) {
         if (used != true) {
             setInterval(function () {
@@ -12834,7 +13031,7 @@ endingPicker = (out, totv, aa, quickstats) => {
                 }
             }, 100);
         }
-    return "<h3>Back to You</h3><p><i>\"Every boy who grew up when I grew up was told that they could be president if they wanted to be…\"</i></p><p>After Padilla's failed runs, some said that the PB was a spent force, doomed to a slow death alongside its Anglo hard-core. Now you've proven the doubters wrong and shown that a Virgin Islander can win where the hand-picked <i>\"Future of the Party\"</i> failed.</p><p>Your presidency is sure to see you lock horns with the Pan-Greens in the legislature and disgruntled factions in your own party, but you're dictating from a position of strength. Cross-Caribbean relations, the <i>\"Constitutional Question\"</i> and the dream of a renewed <i>\"Jaguar Economy\"</i> all await your consideration."
+    return "<h3>Back to You</h3><p><i>\"Every boy who grew up when I grew up was told that they could be president if they wanted to be…\"</i></p><p>After Padilla’s failed runs, some said that the PB was a spent force, doomed to a slow death alongside its Anglo hard-core. Now you’ve proven the doubters wrong and shown that a Virgin Islander can win where the hand-picked <i>\"Future of the Party\"</i> failed.</p><p>Your presidency is sure to see you lock horns with the Pan-Greens in the legislature and disgruntled factions in your own party, but you’re dictating from a position of strength. Cross-Caribbean relations, the <i>\"Constitutional Question\"</i> and the dream of a renewed <i>\"Jaguar Economy\"</i> all await your consideration."
 	} else if (aa[0].candidate == 201) {
     if (used != true) {
         setInterval(function () {
@@ -12845,7 +13042,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             }
         }, 100);
     }
-    return "<h3>The Same Bunch of Clowns?</h3><p>Apologizes are pointless, regrets come too late. Despite the NPP's shambolic performance, Dalmau has managed to crawl to a victory. Your situation in the party is unclear, but without many other options, they might be forced to run you again. If not, you can always retire to the Virgin Islands and slip into a guaranteed place as St. Thomas' local bigman until you are next needed.</p><p>You can't keep the Patriot Bloc out San Juan forever, and when they get in, you'll be back in La Fortaleza with all your buddies."
+    return "<h3>The Same Bunch of Clowns?</h3><p>Apologizes are pointless, regrets come too late. Despite the NPP’s shambolic performance, Dalmau has managed to crawl to a victory. Your situation in the party is unclear, but without many other options, they might be forced to run you again. If not, you can always retire to the Virgin Islands and slip into a guaranteed place as St. Thomas’ local bigman until you are next needed.</p><p>You can’t keep the Patriot Bloc out San Juan forever, and when they get in, you’ll be back in La Fortaleza with all your buddies."
 	} else {
     return "<h3>Hey!</h3>Something broke, probably."
   }
