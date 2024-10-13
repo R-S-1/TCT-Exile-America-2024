@@ -324,10 +324,6 @@ tooltipList = [
           "url": "https://od.lk/s/Nl8yMDY3OTc0ODdf/Pete_Rodriguez_-_I_Like_It_Like_That_Audio_Oficial.mp3"
         },
 		{
-          "name": "The Star-Spangled Banner",
-          "url": "https://od.lk/s/Nl8yMDY3OTc0ODVf/1996_ASG__Kelsey_Grammer_performs_national_anthem.mp3"
-        },
-		{
           "name": "Streets of Old San Juan",
           "url": "https://od.lk/s/Nl8yMDY3OTc0ODhf/Johannes_Linstead_-_The_Streets_Of_Old_San_Juan.mp3"
         },
@@ -343,6 +339,18 @@ tooltipList = [
 		{
           "name": "The Star-Spangled Banner",
           "url": "https://od.lk/s/Nl8yMDY3OTc0ODVf/1996_ASG__Kelsey_Grammer_performs_national_anthem.mp3"
+        },
+		{
+          "name": "My Country 'Tis of Thee",
+          "url": "https://od.lk/s/Nl8yMDk2NzI0NDFf/My_Country_%27Tis_of_Thee_%28abridged%29_-_Concert_Band_-_United_States_Air_Force_Heritage_of_America_Band.mp3"
+        },
+		{
+          "name": "The Stars and Stripes Forever",
+          "url": "https://od.lk/s/Nl8yMDk2NzI0OThf/The_Stars_And_Stripes_Forever.mp3"
+        },
+		{
+          "name": "America The Beautiful",
+          "url": "https://od.lk/s/Nl8yMDk2NzI1MDBf/America_the_Beautiful.mp3"
         }
       ]
     },

@@ -1150,7 +1150,7 @@
 				"name": "Vega Alta",
 				"abbr": "PR_VA",
 				"electoral_votes": 1,
-				"popular_votes": 10,
+				"popular_votes": 55,617,
 				"poll_closing_time": 120,
 				"winner_take_all_flg": 1,
 				"election": 20
@@ -12840,7 +12840,9 @@
 	applyTooltipsToObject(campaignTrail_temp.answers_json);
 	applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
-AmericanTrilogy = false;
+var AmericanTrilogyPrecondition = false;
+var AmericanTrilogy = false;
+var ZaibatsuDeal = false;
 
 e.cyoa = true;
 
@@ -12933,13 +12935,13 @@ cyoAdventure = function (a) {
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
     }
-	if ( american_trilogy_answers === 4 ) {
+	if ( ( american_trilogy_answers === 4 ) && !AmericanTrilogyPrecondition ) {
         e.questions_json.splice(25, 0 , getQuestionFromPk(10225))
         e.global_parameter_json[0].fields.question_count++
+		AmericanTrilogyPrecondition = true;
         console.log("Arlington meeting")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
-		american_trilogy_answers--
     }
 	if (ans === 5046) {
 		AmericanTrilogy = true;
@@ -12967,16 +12969,11 @@ cyoAdventure = function (a) {
         console.log("national_champions")  
 		console.log("zaibatsu_deal_answers count:")	
 		console.log(zaibatsu_deal_answers)		
-    }
-	// && : and
-	// || : or
-	// ! : not
-	// () : enclosure
-	// if (zaibatsu_deal_answers === 3 && <some other value>) 
-	if ( zaibatsu_deal_answers === 3 ) {
+    } 
+	if ( ( zaibatsu_deal_answers === 3 ) && !ZaibatsuDeal ) {
         e.questions_json.splice(22, 0 , getQuestionFromPk(10272))
         e.global_parameter_json[0].fields.question_count++
-		zaibatsu_deal_answers--
+		ZaibatsuDeal = true;
         console.log("zaibatsu_deal_offer") 
 		console.log("zaibatsu_deal_answers count")   
 		console.log(zaibatsu_deal_answers)
