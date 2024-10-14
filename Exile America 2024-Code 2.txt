@@ -680,6 +680,22 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 50701,
+			"fields": {
+				"question": 10211,
+				"description": "Better say nothing."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 50702,
+			"fields": {
+				"question": 10211,
+				"description": "Release a statement saying we firmly oppose drug use."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5071,
 			"fields": {
 				"question": 1022,
@@ -992,6 +1008,14 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 51141,
+			"fields": {
+				"question": 10341,
+				"description": "The Isle of Enchantment will remain a beacon of liberty!"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5118,
 			"fields": {
 				"question": 1035,
@@ -1084,6 +1108,14 @@
 			"fields": {
 				"question": 1038,
 				"description": "I understand that many voters are concerned about their communities. We promise to combat the scourges of poverty, drugs and disease."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 51281,
+			"fields": {
+				"question": 10381,
+				"description": "Faith pays off!"
 			}
 		}
 	]
@@ -9639,6 +9671,26 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30381,
+			"fields": {
+				"answer": 50701,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.04
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30382,
+			"fields": {
+				"answer": 50702,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.02
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3039,
 			"fields": {
 				"answer": 5071,
@@ -10029,6 +10081,16 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30781,
+			"fields": {
+				"answer": 51281,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.03
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3112,
 			"fields": {
 				"answer": 5048,
@@ -10135,6 +10197,16 @@
 				"candidate": 200,
 				"affected_candidate": 201,
 				"global_multiplier": -0.02
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 31231,
+			"fields": {
+				"answer": 51141,
+				"candidate": 200,
+				"affected_candidate": 201,
+				"global_multiplier": -0.1
 			}
 		},
 		{
@@ -10842,6 +10914,36 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_issue",
+			"pk": 25651,
+			"fields": {
+				"answer": 50701,
+				"issue": 103,
+				"issue_score": 0.3,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25652,
+			"fields": {
+				"answer": 50701,
+				"issue": 104,
+				"issue_score": -0.1,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 25653,
+			"fields": {
+				"answer": 50702,
+				"issue": 103,
+				"issue_score": -0.2,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
 			"pk": 2566,
 			"fields": {
 				"answer": 5071,
@@ -11366,7 +11468,7 @@
 			"fields": {
 				"answer": 5114,
 				"issue": 103,
-				"issue_score": -0.5,
+				"issue_score": -0.3,
 				"issue_importance": 3
 			}
 		},
@@ -11375,6 +11477,26 @@
 			"pk": 2619,
 			"fields": {
 				"answer": 5114,
+				"issue": 104,
+				"issue_score": -0.3,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26191,
+			"fields": {
+				"answer": 51141,
+				"issue": 103,
+				"issue_score": -0.5,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26192,
+			"fields": {
+				"answer": 51141,
 				"issue": 104,
 				"issue_score": -0.5,
 				"issue_importance": 3
@@ -11447,6 +11569,26 @@
 				"answer": 5128,
 				"issue": 103,
 				"issue_score": -0.65,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26261,
+			"fields": {
+				"answer": 51281,
+				"issue": 103,
+				"issue_score": -0.65,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26262,
+			"fields": {
+				"answer": 51281,
+				"issue": 104,
+				"issue_score": -0.25,
 				"issue_importance": 1
 			}
 		},
@@ -12165,7 +12307,7 @@
 			"fields": {
 				"answer": 50322,
 				"candidate": 200,
-				"answer_feedback": "You tell Newsom that the campaign needs you at home. He records a short clip vaguely endorsing you which you share on the campaign’s social media, before getting back to real work."
+				"answer_feedback": "You tell Harrell that the campaign needs you at home. He records a short clip vaguely endorsing you which you share on the campaign’s social media, before getting back to real work."
 			}
 		},
 		{
@@ -12938,12 +13080,19 @@ var AmericanTrilogyPrecondition = false;
 var AmericanTrilogy = false;
 var ZaibatsuDeal = false;
 var MitteleuropaAgriDeal = false;
+var RainbowCoalition = false;
+var RainbowDemocracy = false;
+var ProtsEndorsed = false;
+var RastasEndorsed = false;
 
 e.cyoa = true;
 
 var american_trilogy_answers = 0;
 var zaibatsu_deal_answers = 0;
 var mitteleuropa_agrideal_answers = 0;
+var rainbow_democracy_answers = 0;
+var prot_endorse_answers = 0;
+var interfaith_answers = 0;
 
 function tunnel(new_q){
 	return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
@@ -12956,9 +13105,12 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10223, 'fields': {'priority': 1, 'description': 'We’ve been approached by CS Intelligence’s point-man in Puerto Rico. Citing the dangers of terrorism and radicalism, his government proposes that San Juan and Richmond develop a provisional framework for intelligence sharing, to be implemented in our administration. As a show of good faith, he also comes with some dirt on a prominent Dalmau staffer, so we know what they can do for us.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10224, 'fields': {'priority': 1, 'description': 'In light of your previous statements about normalising cross-Caribbean relations, the unofficial ambassador of the CS in Puerto Rico has requested a meeting. He comes with a mandate from his country’s executive to establish a road map to full diplomatic recognition ahead of your likely victory. While this presents obvious problems to our legitimate vision of representing the entire US, it would allow for full recognition of US citizenship by a mainland government and open the road to restoration of property to the exiles. Can we really make such a bargain?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10225, 'fields': {'priority': 1, 'description': 'Under the cover of night, you leave your home in St. Thomas and head to Bourne Airport, where you board a private jet headed to the mainland. After your touchdown in Arlington, you are quickly bundled into a limo with tinted windows and driven out to the designated meeting point.<br><br>By the time you reach the cemetery, Crist and O’Malley are already standing to greet you in front of the Hemicycle. With no need for introductions, you begin discussions in earnest.', 'likelihood': 1}},
-{'model': 'campaign_trail.question', 'pk': 10271, 'fields': {'priority': 1, 'description': 'Pacifican President Newsom has responded warmly to your statement, calling you \"a true friend\" and extending an invitation to visit Sacramento.<br><br>While accepting would burnish your stateman’s credentials, it is unlikely that you will gain anything more from the experience. What do you say?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10271, 'fields': {'priority': 1, 'description': 'Pacifican President Harrell has responded warmly to your statement, calling you \"a true friend\" and extending an invitation to visit Sacramento.<br><br>While accepting would burnish your stateman’s credentials, it is unlikely that you will gain anything more from the experience. What do you say?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10272, 'fields': {'priority': 1, 'description': 'It turns out that the nice young man from Sacramento is the head of the PEA’s Caribbean department. Having flown over to San Juan to make this fact known to you, he also comes with a proposal. <br><br>One of the lesser Zaibatsus is looking to expand its operations and is currently in search of a partner country. With our developed human capital, high tech industry and state support for business, we seem to be a perfect match. The deal would allow our domestic industry to tap into their vast production capacity and allow our best firms to sell their products in the Pacific Rim (under licence, of course). What do we say?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10291, 'fields': {'priority': 1, 'description': 'We’ve received a visit from the Mitteleuropeans. It turns out that the Commission has been interested in negotiating a one-size-fits-all treaty relating to Puerto Rico agricultural products for a while, but have run into a wall with the NPP activists in charge at USDA.<br><br>They propose that we adhere to Mitteleuropean standards on agriculture and in return, we will receive \"most favoured nation\" on our products as well as a developmental aid package targeted at rural areas. The only catch is that this will upset some treehuggers. What do we say?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10381, 'fields': {'priority': 1, 'description': 'Making the most of your recent statements, Karen has managed to convince the most important Protestant churches to band together in offering an endorsement of your candicacy. This will be especially useful in the various overseas islands and with San Juan evangelicals.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10211, 'fields': {'priority': 1, 'description': 'Various smaller sects like the Rastafarians have praised your tolerant policy on drug use and hope your promise to protect religious minorities will extend to their use of marijuana. Should we respond?', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10341, 'fields': {'priority': 1, 'description': 'Ahead of the elections, various faith and community leaders have banded together to publish an open letter calling on their communities to vote for you in the upcoming election. While not outright critical of Dalmau himself, they contrast the NPP’s policies with your own and conclude that only you can maintain the \"multicultural\" character of Puerto Rico.', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -13101,6 +13253,105 @@ cyoAdventure = function (a) {
 		console.log("mitteleuropa_agrideal_answers count")   
 		console.log(mitteleuropa_agrideal_answers)
     }
+	if (ans === 5001) {
+        rainbow_democracy_answers++
+		console.log("Hispanophone Press")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5062) {
+        rainbow_democracy_answers++
+		console.log("Padilla Spoke")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5020) {
+        rainbow_democracy_answers++
+		console.log("Anti-parochial")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5034) {
+        rainbow_democracy_answers++
+		console.log("Pact of Silence")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5030) {
+        rainbow_democracy_answers++
+		console.log("Investigated Crimes")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5083) {
+        rainbow_democracy_answers++
+		console.log("True Democrat")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5114) {
+        rainbow_democracy_answers++
+		console.log("Multiculturalist")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5019) {
+        prot_endorse_answers++
+		interfaith_answers++
+		console.log("Interfaith")
+		console.log("interfaith_answers count:")
+        console.log(interfaith_answers)
+		console.log("prot_endorse_answers count:")
+        console.log(prot_endorse_answers)
+    }
+	if (ans === 5128) {
+        prot_endorse_answers++
+		console.log("Family Guy")
+		console.log("prot_endorse_answers count:")
+        console.log(prot_endorse_answers)
+    }
+	if ( ( prot_endorse_answers === 2 ) && !ProtsEndorsed ) {
+		e.questions_json.splice(13, 0 , getQuestionFromPk(10381))
+        e.global_parameter_json[0].fields.question_count++
+		ProtsEndorsed = true;
+		console.log("Hughes Interfaith")
+		console.log("prot_endorse_answers count:")
+        console.log(prot_endorse_answers)
+    }
+	if (ans === 51281) {
+        rainbow_democracy_answers++
+		console.log("Church Endorsement")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if (ans === 5070) {
+        prot_endorse_answers++
+		interfaith_answers++
+		console.log("Compassionate Conservative")
+		console.log("interfaith_answers count:")
+        console.log(interfaith_answers)
+    }
+	if ( ( interfaith_answers === 2 ) && !RastasEndorsed ) {
+		e.questions_json.splice(22, 0 , getQuestionFromPk(10211))
+		RastasEndorsed = true;
+		console.log("Rastas Happy")
+		console.log("interfaith_answers count:")
+        console.log(interfaith_answers)
+    }
+	if (ans === 50701) {
+        rainbow_democracy_answers++
+		console.log("Rasta Endorsement")
+		console.log("rainbow_democracy_answers count:")
+        console.log(rainbow_democracy_answers)
+    }
+	if ( ( rainbow_democracy_answers === 8 ) && !RainbowDemocracy ) {
+        e.questions_json.splice(27, 0 , getQuestionFromPk(10341))
+        e.global_parameter_json[0].fields.question_count++
+		RainbowDemocracy = true;
+        console.log("rainbow_democracy_answers") 
+		console.log("rainbow_democracy_answers count")   
+		console.log(rainbow_democracy_answers)
+    }
 };
 
 campaignTrail_temp.multiple_endings=true
@@ -13124,7 +13375,59 @@ endingPicker = (out, totv, aa, quickstats) => {
 	
 	music_end()
 	
-	if (AmericanTrilogy) { 
+	if ( (RainbowDemocracy) && ZaibatsuDeal )  { 
+		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/mtXsuQE.png";
+                    }
+                }, 100);
+            }
+	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"Local community leaders greet Holywood director interested in Carter biopic.\"</i> - <b>San Juan Star</b></p><p><i>\"Mitsubishi to further expand production on Puerto Rico.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Ethiopian Crown Prince visits St. Thomas, greets Rastafarian devotees.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
+	}
+	else if ( (RainbowDemocracy) && MitteleuropaAgriDeal )  { 
+		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/mtXsuQE.png";
+                    }
+                }, 100);
+            }
+	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"Local community leaders greet Babelsberg director interested in Carter biopic.\"</i> - <b>San Juan Star</b></p><p><i>\"Douwe Egberts to further expand sourcing from Puerto Rico.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Delegation of Fons visits St. Thomas, meet Caribbean cousins.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
+	}
+	else if ( (RainbowDemocracy) && ans === 5093 )  { 
+		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/mtXsuQE.png";
+                    }
+                }, 100);
+            }
+	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"President greets visitors from Carter's hometown.\"</i> - <b>San Juan Star</b></p><p><i>\"Richmond and San Juan reach deal on non-brand pharmaceuticals.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Delegation of Southerners visit St. Thomas, families reunited.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
+	}
+	else if ( RainbowDemocracy )  { 
+		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/mtXsuQE.png";
+                    }
+                }, 100);
+            }
+	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"Miranda premiers play about Carter.\"</i> - <b>San Juan Star</b></p><p><i>\"Tourism industry buoyed by decreased tensions.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Liberian president visits St. Thomas, speaks about shared heritage.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
+	}
+	else if ( AmericanTrilogy ) { 
 		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
         if (used != true) {
                 setInterval(function () {
@@ -13136,7 +13439,8 @@ endingPicker = (out, totv, aa, quickstats) => {
                 }, 100);
             }
 	return "<h3>Glory, Glory, Hallelujah!</h3><p>\"<i>\Even when opportunity knocks, a man still has to get up off his seat and open the door.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"O’Malley election confirmed by Supreme Court after stand-off, tensions begin to dissipate.\"</i> - <b>San Juan Star</b></p><p><i>\"Texans express interest in free movement, common market.\"</i> - <b>International Herald Tribune</b></p><p><i>\"CS opens Restitution Tribunal, émigrés begin filing claims.\"</i> - <b>Christian Science Monitor</b></p><p>At 12:00, 4 July, 2025, the pall bearers lift the casket from its funerary carriage and carry it to its final destination.<p>After more than 80 years in exile, Douglas MacArthur has at last arrived in Arlington. With more than half the heads of state in America in attendance and an aged Arthur MacArthur watching from a wheelchair, Presidents Grammer and Crist raise their respective flags to flutter in the summer breeze.<p>The old United States may be buried, but for the first time since the Civil War, its people seem to be on the road to another union."
-	} else  if (quickstats[1] >= 60) {
+	}
+	else if (quickstats[1] >= 60) {
             if (used != true) {
                 setInterval(function () {
                     used = true;
@@ -13158,7 +13462,8 @@ endingPicker = (out, totv, aa, quickstats) => {
             }, 100);
         }
     return "<h3>Back to You</h3><p><i>\"Every boy who grew up when I grew up was told that they could be president if they wanted to be…\"</i></p><p>After Padilla’s failed runs, some said that the PB was a spent force, doomed to a slow death alongside its Anglo hard-core. Now you’ve proven the doubters wrong and shown that a Virgin Islander can win where the hand-picked <i>\"Future of the Party\"</i> failed.</p><p>Your presidency is sure to see you lock horns with the Pan-Greens in the legislature and disgruntled factions in your own party, but you’re dictating from a position of strength. Cross-Caribbean relations, the <i>\"Constitutional Question\"</i> and the dream of a renewed <i>\"Jaguar Economy\"</i> all await your consideration."
-	} else if (aa[0].candidate == 201) {
+	} 
+	else if (aa[0].candidate == 201) {
     if (used != true) {
         setInterval(function () {
             used = true;
@@ -13169,8 +13474,9 @@ endingPicker = (out, totv, aa, quickstats) => {
         }, 100);
     }
     return "<h3>The Same Bunch of Clowns?</h3><p>Apologizes are pointless, regrets come too late. Despite the NPP’s shambolic performance, Dalmau has managed to crawl to a victory. Your situation in the party is unclear, but without many other options, they might be forced to run you again. If not, you can always retire to the Virgin Islands and slip into a guaranteed place as St. Thomas’ local bigman until you are next needed.</p><p>You can’t keep the Patriot Bloc out San Juan forever, and when they get in, you’ll be back in La Fortaleza with all your buddies."
-	} else {
-    return "<h3>Hey!</h3>Something broke, probably."
+	} 
+	else {
+		return "<h3>Hey!</h3>Something broke, probably."
   }
 }
 
