@@ -13084,6 +13084,7 @@ var RainbowCoalition = false;
 var RainbowDemocracy = false;
 var ProtsEndorsed = false;
 var RastasEndorsed = false;
+var DixieTrade = false; 
 
 e.cyoa = true;
 
@@ -13344,8 +13345,12 @@ cyoAdventure = function (a) {
 		console.log("rainbow_democracy_answers count:")
         console.log(rainbow_democracy_answers)
     }
+	if (ans === 5093) {
+		DixieTrade = true;
+		console.log("Dixie Trade")
+    }
 	if ( ( rainbow_democracy_answers === 8 ) && !RainbowDemocracy ) {
-        e.questions_json.splice(27, 0 , getQuestionFromPk(10341))
+        e.questions_json.splice(28, 0 , getQuestionFromPk(10341))
         e.global_parameter_json[0].fields.question_count++
 		RainbowDemocracy = true;
         console.log("rainbow_democracy_answers") 
@@ -13401,7 +13406,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             }
 	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"Local community leaders greet Babelsberg director interested in Carter biopic.\"</i> - <b>San Juan Star</b></p><p><i>\"Douwe Egberts to further expand sourcing from Puerto Rico.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Delegation of Fons visits St. Thomas, meet Caribbean cousins.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
 	}
-	else if ( (RainbowDemocracy) && ans === 5093 )  { 
+	else if ( (RainbowDemocracy) && DixieTrade )  { 
 		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
         if (used != true) {
                 setInterval(function () {
