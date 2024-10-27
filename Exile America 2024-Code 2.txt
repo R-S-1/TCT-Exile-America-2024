@@ -1059,7 +1059,7 @@
 			"pk": 51221,
 			"fields": {
 				"question": 10361,
-				"description": "It's over."
+				"description": "It’s over."
 			}
 		},
 		{
