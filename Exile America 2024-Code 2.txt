@@ -1056,6 +1056,14 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 51221,
+			"fields": {
+				"question": 10361,
+				"description": "It's over."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5123,
 			"fields": {
 				"question": 1037,
@@ -13084,7 +13092,8 @@ var RainbowCoalition = false;
 var RainbowDemocracy = false;
 var ProtsEndorsed = false;
 var RastasEndorsed = false;
-var DixieTrade = false; 
+var DixieTrade = false;
+var InfinitaTristeza = false;  
 
 e.cyoa = true;
 
@@ -13094,6 +13103,7 @@ var mitteleuropa_agrideal_answers = 0;
 var rainbow_democracy_answers = 0;
 var prot_endorse_answers = 0;
 var interfaith_answers = 0;
+var infinita_tristeza_answers = 0;
 
 function tunnel(new_q){
 	return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
@@ -13112,6 +13122,7 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10381, 'fields': {'priority': 1, 'description': 'Making the most of your recent statements, Karen has managed to convince the most important Protestant churches to band together in offering an endorsement of your candicacy. This will be especially useful in the various overseas islands and with San Juan evangelicals.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10211, 'fields': {'priority': 1, 'description': 'Various smaller sects like the Rastafarians have praised your tolerant policy on drug use and hope your promise to protect religious minorities will extend to their use of marijuana. Should we respond?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10341, 'fields': {'priority': 1, 'description': 'Ahead of the elections, various faith and community leaders have banded together to publish an open letter calling on their communities to vote for you in the upcoming election. While not outright critical of Dalmau himself, they contrast the NPP’s policies with your own and conclude that only you can maintain the \"multicultural\" character of Puerto Rico.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10361, 'fields': {'priority': 1, 'description': 'You have been couped.', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -13283,6 +13294,9 @@ cyoAdventure = function (a) {
 		console.log("Investigated Crimes")
 		console.log("rainbow_democracy_answers count:")
         console.log(rainbow_democracy_answers)
+		infinita_tristeza_answers++
+		console.log("infinita_tristeza_answers count:")
+        console.log(infinita_tristeza_answers)
     }
 	if (ans === 5083) {
         rainbow_democracy_answers++
@@ -13357,6 +13371,50 @@ cyoAdventure = function (a) {
 		console.log("rainbow_democracy_answers count")   
 		console.log(rainbow_democracy_answers)
     }
+	if (ans === 5000) {
+        infinita_tristeza_answers++
+		console.log("Virgin Islander")
+		console.log("infinita_tristeza_answers count:")
+        console.log(infinita_tristeza_answers)
+    }
+	if (ans === 5013) {
+        infinita_tristeza_answers++
+		console.log("Alphabet Anger")
+		console.log("infinita_tristeza_answers count:")
+        console.log(infinita_tristeza_answers)
+    }
+	if (ans === 5060) {
+        infinita_tristeza_answers++
+		console.log("Padilla Snub")
+		console.log("infinita_tristeza_answers count:")
+        console.log(infinita_tristeza_answers)
+    }
+	if (ans === 5066) {
+        infinita_tristeza_answers++
+		console.log("No Stooge")
+		console.log("infinita_tristeza_answers count:")
+        console.log(infinita_tristeza_answers)
+    }
+	if (ans === 5035) {
+        infinita_tristeza_answers++
+		console.log("Move On")
+		console.log("infinita_tristeza_answers count:")
+        console.log(infinita_tristeza_answers)
+    }
+	if (ans === 5122) {
+        infinita_tristeza_answers++
+		console.log("Padilla Cabinet")
+		console.log("infinita_tristeza_answers count:")
+        console.log(infinita_tristeza_answers)
+    }
+	if ( ( infinita_tristeza_answers === 7 ) && !InfinitaTristeza ) {
+        e.questions_json.splice(26, 0 , getQuestionFromPk(10361))
+        e.global_parameter_json[0].fields.question_count++
+		RainbowDemocracy = InfinitaTristeza;
+        console.log("infinita_tristeza_answers") 
+		console.log("infinita_tristeza_answers count")   
+		console.log(infinita_tristeza_answers)
+    }
 };
 
 campaignTrail_temp.multiple_endings=true
@@ -13381,7 +13439,7 @@ endingPicker = (out, totv, aa, quickstats) => {
 	music_end()
 	
 	if ( (RainbowDemocracy) && ZaibatsuDeal )  { 
-		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MTZf/La%20Vida%20Es%20Un%20Carnaval.mp3")
         if (used != true) {
                 setInterval(function () {
                     used = true;
@@ -13394,7 +13452,7 @@ endingPicker = (out, totv, aa, quickstats) => {
 	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"Local community leaders greet Holywood director interested in Carter biopic.\"</i> - <b>San Juan Star</b></p><p><i>\"Mitsubishi to further expand production on Puerto Rico.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Ethiopian Crown Prince visits St. Thomas, greets Rastafarian devotees.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
 	}
 	else if ( (RainbowDemocracy) && MitteleuropaAgriDeal )  { 
-		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MTZf/La%20Vida%20Es%20Un%20Carnaval.mp3")
         if (used != true) {
                 setInterval(function () {
                     used = true;
@@ -13407,7 +13465,7 @@ endingPicker = (out, totv, aa, quickstats) => {
 	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"Local community leaders greet Babelsberg director interested in Carter biopic.\"</i> - <b>San Juan Star</b></p><p><i>\"Douwe Egberts to further expand sourcing from Puerto Rico.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Delegation of Fons visits St. Thomas, meet Caribbean cousins.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
 	}
 	else if ( (RainbowDemocracy) && DixieTrade )  { 
-		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MTZf/La%20Vida%20Es%20Un%20Carnaval.mp3")
         if (used != true) {
                 setInterval(function () {
                     used = true;
@@ -13420,7 +13478,7 @@ endingPicker = (out, totv, aa, quickstats) => {
 	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"President greets visitors from Carter's hometown.\"</i> - <b>San Juan Star</b></p><p><i>\"Richmond and San Juan reach deal on non-brand pharmaceuticals.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Delegation of Southerners visit St. Thomas, families reunited.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
 	}
 	else if ( RainbowDemocracy )  { 
-		setMusic("https://od.lk/s/Nl8yMDkzNzg4NDVf/An_American_Trilogy_with_The_Royal_Philharmonic_Orchestra.mp3")
+		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MTZf/La%20Vida%20Es%20Un%20Carnaval.mp3")
         if (used != true) {
                 setInterval(function () {
                     used = true;
@@ -13482,6 +13540,7 @@ endingPicker = (out, totv, aa, quickstats) => {
 	} 
 	else {
 		return "<h3>Hey!</h3>Something broke, probably."
+		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MThf/Puerto%20Rico.mp3")
   }
 }
 

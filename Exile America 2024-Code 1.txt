@@ -364,6 +364,10 @@ tooltipList = [
 		{
           "name": "Infinita Tristeza",
           "url": "https://od.lk/s/Nl8yMDY3OTc0ODZf/Manu_Chao_-_Infinita_Tristeza_Official_Audio.mp3"
+        },
+		{
+          "name": "Panik Panik",
+          "url": "https://od.lk/s/Nl8yMTAzNjQ2MjJf/Panik%20Panik.mp3"
         }
       ]
     }
