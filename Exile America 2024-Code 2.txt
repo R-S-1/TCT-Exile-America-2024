@@ -259,7 +259,7 @@
 			"pk": 5000,
 			"fields": {
 				"question": 1000,
-				"description": "These same people said a Virgin Islander could never beat out the exile establishment and run for POTUS. If I have to take a hit for being outspoken, so be it."
+				"description": "These same people said a Virgin Islander could never beat out the Exile Establishment and run for POTUS. If I have to take a hit for being outspoken, so be it."
 			}
 		},
 		{
@@ -2266,21 +2266,21 @@
 			"pk": 101,
 			"fields": {
 				"name": "Economic Policy",
-				"description": 0,
+				"description": "Puerto Rico combines high-tech industry & the service sector with jíbaro homesteaders in the interior. Industry is focused on export, while agriculture is primarily internally directed and supportive of protectionism & subsidies.",
 				"stance_1": "Very Export Oriented",
-				"stance_desc_1": 0,
+				"stance_desc_1": "This region is one of the island's centers for industrial and service sector activity.",
 				"stance_2": "Export Oriented",
-				"stance_desc_2": 0,
+				"stance_desc_2": "Industry and the services sector have a strong presence in this region.",
 				"stance_3": "Somewhat Export Oriented",
-				"stance_desc_3": 0,
+				"stance_desc_3": "This region has some industrial activity.",
 				"stance_4": "Moderate",
-				"stance_desc_4": 0,
+				"stance_desc_4": "This region has a mixed economy.",
 				"stance_5": "Somewhat Agrarian",
-				"stance_desc_5": 0,
+				"stance_desc_5": "Agriculture is the major activity in this region.",
 				"stance_6": "Agrarian",
-				"stance_desc_6": 0,
+				"stance_desc_6": "This region is primarily agricultural.",
 				"stance_7": "Very Agrarian",
-				"stance_desc_7": 0,
+				"stance_desc_7": "Non-agricultural activity in this region is negligible.",
 				"election": 20
 			}
 		},
@@ -2289,21 +2289,21 @@
 			"pk": 102,
 			"fields": {
 				"name": "Constitutional Status",
-				"description": 0,
+				"description": "The \"constitutional question\", represents the dilemma between maintaining San Juan's legal claim to be the United States -with all our implications for the overseas territories- or declaring a Puerto Rican state.",
 				"stance_1": "Staunch Legitimist",
-				"stance_desc_1": 0,
+				"stance_desc_1": "The people in this region strongly view themselves as living in the legitimate American government.",
 				"stance_2": "Legitimist ",
-				"stance_desc_2": 0,
+				"stance_desc_2": "The people in this region support a continued status as United States.",
 				"stance_3": "Leans Legitimist",
-				"stance_desc_3": 0,
+				"stance_desc_3": "The people in this region are opposed to constitutional change.",
 				"stance_4": "Moderate",
-				"stance_desc_4": 0,
+				"stance_desc_4": "The people in this region favour the status quo.",
 				"stance_5": "Leans Independentist",
-				"stance_desc_5": 0,
+				"stance_desc_5": "The people in this region support moves towards independence.",
 				"stance_6": "Independentist",
-				"stance_desc_6": 0,
+				"stance_desc_6": "The people in this region favour independence.",
 				"stance_7": "Very Independentist",
-				"stance_desc_7": 0,
+				"stance_desc_7": "The people in this region militantly agitate for the establishment of a Puerto Rican state.",
 				"election": 20
 			}
 		},
@@ -2312,21 +2312,21 @@
 			"pk": 103,
 			"fields": {
 				"name": "Social Issues",
-				"description": 0,
+				"description": "Attitudes to drug use, sexual relations and more vary across Puerto Rico, with liberals and conservatives existing in both parties.",
 				"stance_1": "Very Conservative",
-				"stance_desc_1": 0,
+				"stance_desc_1": "Profound religiosity and traditionalism shapes the social views of this region.",
 				"stance_2": "Conservative",
-				"stance_desc_2": 0,
+				"stance_desc_2": "Traditional values shape the social views of this region.",
 				"stance_3": "Leans Conservative",
-				"stance_desc_3": 0,
+				"stance_desc_3": "Hesitancy towards social change is common in this region.",
 				"stance_4": "Moderate",
-				"stance_desc_4": 0,
+				"stance_desc_4": "This region accepts unconventional practices as long as they stay behind closed doors.",
 				"stance_5": "Leans Liberal",
-				"stance_desc_5": 0,
+				"stance_desc_5": "People in this region take a hands-off approach to personal practices.",
 				"stance_6": "Liberal",
-				"stance_desc_6": 0,
+				"stance_desc_6": "The people of this region are liberal in their social outlook.",
 				"stance_7": "Very Liberal",
-				"stance_desc_7": 0,
+				"stance_desc_7": "Active support for social reform is common in this region.",
 				"election": 20
 			}
 		},
@@ -2335,21 +2335,21 @@
 			"pk": 104,
 			"fields": {
 				"name": "Multiculturalism",
-				"description": 0,
+				"description": "Ethnicity, religion and language are contested traits on Puerto Rico and shape the political values of regions.",
 				"stance_1": "Pluralistic",
-				"stance_desc_1": 0,
+				"stance_desc_1": "The constant mingling of religions, languages and ethnicities has led many in this region to embrace multiculturalism as a positive state of affairs.",
 				"stance_2": "Open Minded",
-				"stance_desc_2": 0,
+				"stance_desc_2": "Community relations are peaceful and intercultural exchange is the normal state of affairs.",
 				"stance_3": "Somewhat Open Minded",
-				"stance_desc_3": 0,
+				"stance_desc_3": "A modus vivendi exists in this region, for now.",
 				"stance_4": "Neutral",
-				"stance_desc_4": 0,
+				"stance_desc_4": "Reactions to multiculturalism in this region are mixed.",
 				"stance_5": "Somewhat Close Minded",
-				"stance_desc_5": 0,
+				"stance_desc_5": "The foreign is viewed with a cautious suspicion in this region.",
 				"stance_6": "Close Minded",
-				"stance_desc_6": 0,
+				"stance_desc_6": "Suspicion of the foreign and \"other\" are common in this region.",
 				"stance_7": "Chauvinist",
-				"stance_desc_7": 0,
+				"stance_desc_7": "The people of this region resent foreign influences and invectives against the \"other\" are a core part of political discourse.",
 				"election": 20
 			}
 		}
@@ -13092,7 +13092,7 @@ var RainbowCoalition = false;
 var RainbowDemocracy = false;
 var ProtsEndorsed = false;
 var RastasEndorsed = false;
-var DixieTrade = false;
+var DixieNormal = false;
 var InfinitaTristeza = false;  
 
 e.cyoa = true;
@@ -13104,10 +13104,7 @@ var rainbow_democracy_answers = 0;
 var prot_endorse_answers = 0;
 var interfaith_answers = 0;
 var infinita_tristeza_answers = 0;
-
-function tunnel(new_q){
-	return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
-}  
+var dixie_normalisation_answers = 0;
 
 questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10220, 'fields': {'priority': 1, 'description': 'One of the most controversial parts of the services sector is the so-called \"passport trade\", where San Juan based law firms facilitate the acquisition of 2nd nationalities by questionable figures using citizenship by investment schemes in Puerto Rico and other states. The practice is routinely condemned by both the PB and NPP, but has persisted due to intense lobbying. Will you make a statement on the issue?', 'likelihood': 1}},
@@ -13166,9 +13163,12 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5093 ) {
 		american_trilogy_answers++
+		dixie_normalisation_answers++
         console.log("CS freetrade")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
+		console.log("dixie_normalisation_answers count:")
+        console.log(dixie_normalisation_answers)
     }
 	if (ans === 5031 ) {
         e.questions_json.splice(10, 0 , getQuestionFromPk(10223))
@@ -13184,7 +13184,7 @@ cyoAdventure = function (a) {
         console.log(american_trilogy_answers)
     }
 	if ( ans === 5043) {
-        e.questions_json.splice(23, 0 , getQuestionFromPk(10224))
+        e.questions_json.splice(24, 0 , getQuestionFromPk(10224))
         e.global_parameter_json[0].fields.question_count++
         console.log("Diplo recognition")   
         console.log("american_trilogy_answers count:")
@@ -13192,9 +13192,12 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5044 ) {
 		american_trilogy_answers++
+		dixie_normalisation_answers++
         console.log("CS diplomatic recognition")   
         console.log("american_trilogy_answers count:")
         console.log(american_trilogy_answers)
+		console.log("dixie_normalisation_answers count:")
+        console.log(dixie_normalisation_answers)
     }
 	if ( ( american_trilogy_answers === 4 ) && !AmericanTrilogyPrecondition ) {
         e.questions_json.splice(25, 0 , getQuestionFromPk(10225))
@@ -13289,7 +13292,7 @@ cyoAdventure = function (a) {
 		console.log("rainbow_democracy_answers count:")
         console.log(rainbow_democracy_answers)
     }
-	if (ans === 5030) {
+	if (ans === 5102) {
         rainbow_democracy_answers++
 		console.log("Investigated Crimes")
 		console.log("rainbow_democracy_answers count:")
@@ -13348,6 +13351,7 @@ cyoAdventure = function (a) {
     }
 	if ( ( interfaith_answers === 2 ) && !RastasEndorsed ) {
 		e.questions_json.splice(22, 0 , getQuestionFromPk(10211))
+		e.global_parameter_json[0].fields.question_count++
 		RastasEndorsed = true;
 		console.log("Rastas Happy")
 		console.log("interfaith_answers count:")
@@ -13359,12 +13363,12 @@ cyoAdventure = function (a) {
 		console.log("rainbow_democracy_answers count:")
         console.log(rainbow_democracy_answers)
     }
-	if (ans === 5093) {
-		DixieTrade = true;
-		console.log("Dixie Trade")
+	if ( ( dixie_normalisation_answers === 2 ) && !DixieNormal ) {
+		DixieNormal = true;
+		console.log("Dixie Normal")
     }
 	if ( ( rainbow_democracy_answers === 8 ) && !RainbowDemocracy ) {
-        e.questions_json.splice(28, 0 , getQuestionFromPk(10341))
+        e.questions_json.splice(29, 0 , getQuestionFromPk(10341))
         e.global_parameter_json[0].fields.question_count++
 		RainbowDemocracy = true;
         console.log("rainbow_democracy_answers") 
@@ -13410,12 +13414,21 @@ cyoAdventure = function (a) {
 	if ( ( infinita_tristeza_answers === 7 ) && !InfinitaTristeza ) {
         e.questions_json.splice(26, 0 , getQuestionFromPk(10361))
         e.global_parameter_json[0].fields.question_count++
-		RainbowDemocracy = InfinitaTristeza;
+		InfinitaTristeza = true;
         console.log("infinita_tristeza_answers") 
 		console.log("infinita_tristeza_answers count")   
 		console.log(infinita_tristeza_answers)
     }
 };
+
+function tunnel(new_q){
+	return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
+}
+
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk);
+}  
+
 
 campaignTrail_temp.multiple_endings=true
 endingPicker = (out, totv, aa, quickstats) => {
@@ -13438,7 +13451,20 @@ endingPicker = (out, totv, aa, quickstats) => {
 	
 	music_end()
 	
-	if ( (RainbowDemocracy) && ZaibatsuDeal )  { 
+	if ( (RainbowDemocracy) && AmericanTrilogy )  { 
+		setMusic("https://od.lk/s/Nl8yMTA1MjE1ODJf/Goin%27%20Home.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/NYxj98k.png";
+                    }
+                }, 100);
+            }
+	return "<h3>A New Founding Father!</h3><p>\"<i>\Observe good faith and justice towards all Nations; cultivate peace and harmony with all.\"</i> - <b>George Washington</b></p><p><i>\"Tristani to attend MacArthur internment in ex-President role.\"</i> - <b>San Juan Star</b></p><p><i>\"Delegates arrive at Philadelphia Convention, Texans send observer.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Discussions commence on repatriating Declaration of Independence to Washington.\"</i> - <b>Christian Science Monitor</b></p><p>Reconciling divisions at home and abroad, you have managed to chart a course to re-union, while establishing a lasting peace on Puerto Rico.<p>Proving your capacity to reach out to all Americans, you have succeeded in healing the political rifts on the island and galvanizing even the NPP towards a closer relationship with the mainland. While the party is sure to remain a political force, it now faces a crisis of identity not seen since the days of Carter. All the while, international recognition of your status as a statesman is only growing and you are already spoken of as the <i>\"Leader of a United America\"</i>.  <p><b>Mr President</b>, your name deservedly ranks alongside those of the Founders! "
+	}
+	else if ( (RainbowDemocracy) && ZaibatsuDeal )  { 
 		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MTZf/La%20Vida%20Es%20Un%20Carnaval.mp3")
         if (used != true) {
                 setInterval(function () {
@@ -13464,7 +13490,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             }
 	return "<h3>A Rainbow Democracy?</h3><p>\"<i>\The bond of our common humanity is stronger than the divisiveness of our fears and prejudices.\"</i> - <b>Jimmy Carter</b></p><p><i>\"Local community leaders greet Babelsberg director interested in Carter biopic.\"</i> - <b>San Juan Star</b></p><p><i>\"Douwe Egberts to further expand sourcing from Puerto Rico.\"</i> - <b>International Herald Tribune</b></p><p><i>\"Delegation of Fons visits St. Thomas, meet Caribbean cousins.\"</i> - <b>Virgin Islands Daily News</b></p><p>When Jimmy Carter died, some wondered if the dream of a multicultural Puerto Rico died with him. You have more than proven the doubters wrong.<p>Nothing shocked you more than to hear both Dalmau ring you after the election and congratulate you on your victory. While he’s returned to his old academic career, you've been able to consult on some legal questions and have settled into a role as sparring partners of sorts. Rosselló has returned to a prominent role in the NPP, but this is more a sign of the party’s doldrums than a serious political future.<p>The new model is not perfect and tensions are bound to arise, you have secured the country’s economic future and found a way to reconcile much of the country. "
 	}
-	else if ( (RainbowDemocracy) && DixieTrade )  { 
+	else if ( (RainbowDemocracy) && DixieNormal )  { 
 		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MTZf/La%20Vida%20Es%20Un%20Carnaval.mp3")
         if (used != true) {
                 setInterval(function () {

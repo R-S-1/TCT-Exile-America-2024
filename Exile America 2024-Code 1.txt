@@ -359,8 +359,16 @@ tooltipList = [
       ]
     },
 	2: {
-      name: "Radio Popular",
+      name: "Radio Patria Nueva",
       tracklist: [
+		{
+          "name": "Dalmau, Dalmau, Dalmau",
+          "url": "https://od.lk/s/Nl8yMTA1MDc2MDhf/Dalmau%20Dalmau%20Dalmau.mp3"
+        },
+		{
+          "name": "Vamoa Ganar",
+          "url": "https://od.lk/s/Nl8yMTA1MDc2MDZf/Vamoa%20Ganar.mp3"
+        },
 		{
           "name": "Infinita Tristeza",
           "url": "https://od.lk/s/Nl8yMDY3OTc0ODZf/Manu_Chao_-_Infinita_Tristeza_Official_Audio.mp3"
@@ -452,7 +460,7 @@ campaignTrail_temp.candidate_json = [
 				"party":"Patriot Bloc",
 				"state":"Overseas",
 				"priority":1,
-				"description":"<div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'>A native of the Virgin Islands, Kelsey Grammer is one of the few Americans native to the rump United States. As a result, he is extremely popular in his home region and was one of the few successful members of the John McCain administration. In a Fortaleza characterised by McCain’s aggressive bluster and bravado, he distinguished himself by playing a stoic straight man capable of delivering for the party machine. <br><br>As the PB’s fortunes recover and they make a serious challenge to the incumbent New Progressives, <b>his popularity overseas and command of the party machinery will be indispensable.</b> <br><br><i>As election day nears, will the Caribbean Kid be able to lead his party to victory and restore PB hegemony?</i></div></div></div></div></div>",
+				"description":"<div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'>A native of the Virgin Islands, Kelsey Grammer is one of the few Anglo-Americans with roots in the territory of the rump United States. As a result, he is extremely popular in his home region and was one of the few successful members of the John McCain administration. In a Fortaleza characterised by McCain’s aggressive bluster and bravado, he distinguished himself by playing a stoic straight man capable of delivering for the party machine. <br><br>As the PB’s fortunes recover and they make a serious challenge to the incumbent New Progressives, <b>his popularity overseas and command of the party machinery will be indispensable.</b> <br><br><i>As election day nears, will the Caribbean Kid be able to lead his party to victory and restore PB hegemony?</i></div></div></div></div></div>",
 				"color_hex":"#0d059c",
 				"secondary_color_hex":"#0D05C4",
 				"is_active":1,
