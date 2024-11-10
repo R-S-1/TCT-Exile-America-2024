@@ -791,6 +791,22 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 50841,
+			"fields": {
+				"question": 10251,
+				"description": "I will bring peace, freedom, justice, and security to my new America!"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 50842,
+			"fields": {
+				"question": 10251,
+				"description": "My allegiance is to the Republic! To DEMOCRACY!!"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5086,
 			"fields": {
 				"question": 1026,
@@ -9805,7 +9821,7 @@
 				"answer": 5084,
 				"candidate": 200,
 				"affected_candidate": 200,
-				"global_multiplier": 0.008
+				"global_multiplier": -0.008
 			}
 		},
 		{
@@ -9815,7 +9831,27 @@
 				"answer": 5085,
 				"candidate": 200,
 				"affected_candidate": 200,
-				"global_multiplier": 0.008
+				"global_multiplier": 0.004
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30481,
+			"fields": {
+				"answer": 50841,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.05
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30482,
+			"fields": {
+				"answer": 50842,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.05
 			}
 		},
 		{
@@ -10186,6 +10222,16 @@
 				"candidate": 200,
 				"affected_candidate": 201,
 				"global_multiplier": -0.0308
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 31191,
+			"fields": {
+				"answer": 50841,
+				"candidate": 200,
+				"affected_candidate": 201,
+				"global_multiplier": -0.05
 			}
 		},
 		{
@@ -12693,6 +12739,24 @@
 		},
 		{
 			"model": "campaign_trail.answer_feedback",
+			"pk": 25691,
+			"fields": {
+				"answer": 50841,
+				"candidate": 200,
+				"answer_feedback": "All it cost was your soul."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
+			"pk": 25692,
+			"fields": {
+				"answer": 50842,
+				"candidate": 200,
+				"answer_feedback": "The threats they made are not worth repeating. Suffice to say that you've made some very powerful enemies."
+			}
+		},
+		{
+			"model": "campaign_trail.answer_feedback",
 			"pk": 2571,
 			"fields": {
 				"answer": 5086,
@@ -13124,7 +13188,8 @@ var RainbowDemocracy = false;
 var ProtsEndorsed = false;
 var RastasEndorsed = false;
 var DixieNormal = false;
-var InfinitaTristeza = false;  
+var InfinitaTristeza = false; 
+var ElPresidente = false;  
 
 e.cyoa = true;
 
@@ -13136,6 +13201,7 @@ var prot_endorse_answers = 0;
 var interfaith_answers = 0;
 var infinita_tristeza_answers = 0;
 var dixie_normalisation_answers = 0;
+var caesarism_answers = 0;
 
 questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10220, 'fields': {'priority': 1, 'description': 'One of the most controversial parts of the services sector is the so-called \"passport trade\", where San Juan based law firms facilitate the acquisition of 2nd nationalities by questionable figures using citizenship by investment schemes in Puerto Rico and other states. The practice is routinely condemned by both the PB and NPP, but has persisted due to intense lobbying. Will you make a statement on the issue?', 'likelihood': 1}},
@@ -13151,6 +13217,7 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10211, 'fields': {'priority': 1, 'description': 'Various smaller sects like the Rastafarians have praised your tolerant policy on drug use and hope your promise to protect religious minorities will extend to their use of marijuana. Should we respond?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10341, 'fields': {'priority': 1, 'description': 'Ahead of the elections, various faith and community leaders have banded together to publish an open letter calling on their communities to vote for you in the upcoming election. While not outright critical of Dalmau himself, they contrast the NPP’s policies with your own and conclude that only you can maintain the \"multicultural\" character of Puerto Rico.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10361, 'fields': {'priority': 1, 'description': 'Shots ring out in the street and the lights begin to flicker. From your terrace, you see APCs rolling down streets and hear sirens going off. Then the power cuts out.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10251, 'fields': {'priority': 1, 'description': 'Taking note of your recent statements, a group of dissatisfied intelligence and army officers have approached you with a deal. In exchange for positions in your new administration, they will leverage their connections and funding to assist you in securing the votes you need to not just win, but reshape the country in your vision. <br><br>It goes without saying that this is a deal with the devil.', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -13450,6 +13517,62 @@ cyoAdventure = function (a) {
 		switcheroo_coup();
         campaignTrail_temp.question_number = 25;
     }
+	if (ans === 5017) {
+        caesarism_answers++
+		console.log("Peace & Security")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if (ans === 5023) {
+        caesarism_answers++
+		console.log("Enemies on All Sides")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if (ans === 5030) {
+        caesarism_answers++
+		console.log("Proactive FBI")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if (ans === 5033) {
+        caesarism_answers++
+		console.log("Defended MacArthur")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if (ans === 5064) {
+        caesarism_answers++
+		console.log("Bribed Officers")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if (ans === 5074) {
+        caesarism_answers++
+		console.log("Autarky")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if (ans === 5084) {
+        caesarism_answers++
+		console.log("Excused White Terror")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if (ans === 5101) {
+        caesarism_answers++
+		console.log("Defended Veterans")
+		console.log("caesarism_answers count:")
+        console.log(caesarism_answers)
+    }
+	if ( ( caesarism_answers === 8 ) && !ElPresidente ) {
+		e.questions_json.splice(23, 0 , getQuestionFromPk(10251))
+        e.global_parameter_json[0].fields.question_count++
+		ElPresidente = true;
+        console.log("caesarism_answers") 
+		console.log("caesarism_answers count")   
+		console.log(caesarism_answers)
+    }
 	if (ans === 5112 && campaignTrail_temp.player_answers.includes(5067)) {
 		updateFeedback(2596, "The contradiction between your hardline stance on drugs and your own personal history opens you up to scathing attacks by Dalmau’s camp.") 
 		changeGlobalEffect(200, 3072, -0.15)
@@ -13655,7 +13778,20 @@ endingPicker = (out, totv, aa, quickstats) => {
                     }
                 }, 100);
             }
-	return "<h3>Falling Down</h3><p>\"<i>\Talk of imminent threat to our national security through the application of external force is pure nonsense.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"Civil liberty and this kind of martial law cannot endure together; the antagonism is irreconcilable; and, in the conflict, one or the other must perish.\"</i> - <b>Ex parte Milligan</b></p><p></p><p><i>\"Army takeover on Puerto Rico-Martial Law declared.\"</i> - <b>Boston Herald</b></p><p>You sit huddled in your villa, considering your options, when the radio crackles: <i>\"We interrupt our programming; this is a national emergency. Stand by for further information.\"</i><p>You don't need to listen to understand what has happened. More and more aggrieved by political developments in the country, reactionary forces have finally taken matters into their own hands. In the long-run, they've doomed themselves, but for now they have mastery of the land. The only option is to flee. <p>You exit your home through the back door, hoping to slip away unnoticed, when a shot rings out. You stare down at your shirt, which begins to turn red."
+	return "<h3>Falling Down</h3><p>\"<i>\Talk of imminent threat to our national security through the application of external force is pure nonsense.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"Civil liberty and this kind of martial law cannot endure together; the antagonism is irreconcilable; and, in the conflict, one or the other must perish.\"</i> - <b>Ex parte Milligan</b></p><p></p><p><i>\"Army takeover on Puerto Rico-Martial Law declared.\"</i> - <b>Boston Herald</b></p><p>You sit huddled in your villa, considering your options, when the radio crackles: <i>\"We interrupt our programming; this is a national emergency. Stand by for further information.\"</i><p>You don't need to listen to understand what has happened. More and more aggrieved by political developments in the country, reactionary forces have finally taken matters into their own hands. In the long-run, they've doomed themselves, but for now they have mastery of the land. The only option is to flee. <p>You exit your home through the back door, hoping to slip away unnoticed, when a shot rings out. You stare down at your shirt as it begins to turn red."
+	}
+	else if ( ElPresidente )  { 
+		setMusic("https://od.lk/s/Nl8yMTA1NjA3OTBf/Four_Ruffles_and_Flourishes_and_Hail_to_the_Chief.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/9CfV7N9.png";
+                    }
+                }, 100);
+            }
+	return "<h3>Hail to the Chief!</h3><p>\"<i>\For what does it profit a man to gain the whole world and forfeit his soul?\"</i> - <b>Mark 8:36</b></p><p><i>\"If you must break the law, do it to seize power: in all other cases observe it.\"</i> - <b>Julius Caesar</b></p><p><i>\"Grammer dissolves legislature, declares State of Emergency.\"</i> - <b>Boston Herald</b></p><p>The first days after dissolution are tumultuous. Rioting and protests rock the island, crowds try to storm their way into the capitol. But day after day, the waves break onto the rocks of the riot police. And night after night their organizers receive surprise visits from the FBI. After a week, Dalmau gives up and makes the mistake of flying to Mexico, a fact you eagerly broadcast on the radio and every newspaper front page.<p>Without a credible leader, the movement dies with a whimper and you commence the real work. The first step is the upcoming trials of what NPP leadership still remains in the country.<p>It may take a year, it may take a decade, but you will make America what it was always <b>destined</b> to be."
 	}
 	else if ( (RainbowDemocracy) && AmericanTrilogy )  { 
 		setMusic("https://od.lk/s/Nl8yMTA1MjE1ODJf/Goin%27%20Home.mp3")
