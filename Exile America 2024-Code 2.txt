@@ -1059,7 +1059,7 @@
 			"pk": 51221,
 			"fields": {
 				"question": 10361,
-				"description": "It’s over."
+				"description": "This can't be happening!"
 			}
 		},
 		{
@@ -2243,21 +2243,21 @@
 			"pk": 100,
 			"fields": {
 				"name": "National Identity",
-				"description": 0,
+				"description": "Identification with American or Boricua (IE Puerto Rican) nationhood is the central distinction between the Pan-Blue and Pan-Green camps. Contrary to what some might expect, this issue of nationhood is not purely linguistic, with many Hispanophones identifying as American and (albeit much more rarely) some Anglophones identifying as Puerto Rican.",
 				"stance_1": "Very Americanist",
-				"stance_desc_1": 0,
+				"stance_desc_1": "The people of this region view themselves as exclusively American.",
 				"stance_2": "Americanist",
-				"stance_desc_2": 0,
+				"stance_desc_2": "The people of this region view themselves as American.",
 				"stance_3": "Leans Americanist",
-				"stance_desc_3": 0,
+				"stance_desc_3": "The people of this region primarily identify with American identity.",
 				"stance_4": "Mixed",
-				"stance_desc_4": 0,
+				"stance_desc_4": "This region has a mixed sense of identity.",
 				"stance_5": "Leans Boricua",
-				"stance_desc_5": 0,
+				"stance_desc_5": "The people of this region primarily identify with Boricua identity.",
 				"stance_6": "Boricua",
-				"stance_desc_6": 0,
+				"stance_desc_6": "The people of this region view themselves as Boricua.",
 				"stance_7": "Very Boricua",
-				"stance_desc_7": 0,
+				"stance_desc_7": "The people of this region view themselves as exclusively Boricua.",
 				"election": 20
 			}
 		},
@@ -10059,6 +10059,46 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30761,
+			"fields": {
+				"answer": 51221,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.9
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30762,
+			"fields": {
+				"answer": 51221,
+				"candidate": 200,
+				"affected_candidate": 201,
+				"global_multiplier": -0.9
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30763,
+			"fields": {
+				"answer": 51221,
+				"candidate": 200,
+				"affected_candidate": 202,
+				"global_multiplier": -0.9
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30764,
+			"fields": {
+				"answer": 51221,
+				"candidate": 200,
+				"affected_candidate": 203,
+				"global_multiplier": -0.9
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3077,
 			"fields": {
 				"answer": 5127,
@@ -13119,7 +13159,7 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10381, 'fields': {'priority': 1, 'description': 'Making the most of your recent statements, Karen has managed to convince the most important Protestant churches to band together in offering an endorsement of your candicacy. This will be especially useful in the various overseas islands and with San Juan evangelicals.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10211, 'fields': {'priority': 1, 'description': 'Various smaller sects like the Rastafarians have praised your tolerant policy on drug use and hope your promise to protect religious minorities will extend to their use of marijuana. Should we respond?', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10341, 'fields': {'priority': 1, 'description': 'Ahead of the elections, various faith and community leaders have banded together to publish an open letter calling on their communities to vote for you in the upcoming election. While not outright critical of Dalmau himself, they contrast the NPP’s policies with your own and conclude that only you can maintain the \"multicultural\" character of Puerto Rico.', 'likelihood': 1}},
-{'model': 'campaign_trail.question', 'pk': 10361, 'fields': {'priority': 1, 'description': 'You have been couped.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10361, 'fields': {'priority': 1, 'description': 'Shots ring out in the street and the lights begin to flicker. In the distance you hear the sound of large vehicles moving and sirens going off. Then the power cuts out.', 'likelihood': 1}},
 ]
 
 getQuestionFromPk = function (pk) {
@@ -13405,20 +13445,30 @@ cyoAdventure = function (a) {
 		console.log("infinita_tristeza_answers count:")
         console.log(infinita_tristeza_answers)
     }
-	if (ans === 5122) {
-        infinita_tristeza_answers++
-		console.log("Padilla Cabinet")
-		console.log("infinita_tristeza_answers count:")
-        console.log(infinita_tristeza_answers)
-    }
-	if ( ( infinita_tristeza_answers === 7 ) && !InfinitaTristeza ) {
-        e.questions_json.splice(26, 0 , getQuestionFromPk(10361))
+	if ( ( infinita_tristeza_answers === 6 ) && !InfinitaTristeza ) {
+        e.questions_json.splice(13, 0 , getQuestionFromPk(10361))
         e.global_parameter_json[0].fields.question_count++
 		InfinitaTristeza = true;
         console.log("infinita_tristeza_answers") 
 		console.log("infinita_tristeza_answers count")   
 		console.log(infinita_tristeza_answers)
     }
+	 if( ans == 51221) {
+        campaignTrail_temp.candidate_json[0]["fields"].first_name = "Military";
+        campaignTrail_temp.candidate_json[0]["fields"].last_name = "Junta";
+		switcheroo_coup();
+        campaignTrail_temp.question_number = 25;
+    }
+	if (ans === 5112 && campaignTrail_temp.player_answers.includes(5067)) {
+		updateFeedback(2596, "The contradiction between your hardline stance on drugs and your own personal history opens you up to scathing attacks by Dalmau’s camp.") 
+		changeGlobalEffect(200, 3072, -0.15)
+		console.log("Cocaine Cowboy") 
+	}
+	if (ans === 5114 && (RainbowDemocracy) ) {
+		updateFeedback(2598, "Your recent conduct has cemented your image as the defender of Multiculturalism on Puerto Rico.") 
+		changeGlobalEffect(201, 3123, -0.05)
+		console.log("True Multiculturalist") 
+	}
 };
 
 function tunnel(new_q){
@@ -13427,8 +13477,92 @@ function tunnel(new_q){
 
 function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk);
-}  
+}
 
+function updateFeedback(pkValue, newFeedback) {
+    let entry = campaignTrail_temp.answer_feedback_json.find(entry => entry.pk === pkValue);
+    if (entry) {
+        entry.fields.answer_feedback = newFeedback;
+    }
+}
+
+function changeGlobalEffect(affectedCandidate, answer, changeAmount) {
+  let found = false;
+  campaignTrail_temp.answer_score_global_json.forEach((item) => {
+    if (item.fields.affected_candidate === affectedCandidate && item.fields.answer === answer) {
+      item.fields.global_multiplier += changeAmount;
+      found = true;
+    }
+  });
+  
+  if (!found) {
+    const lastEntry = campaignTrail_temp.answer_score_global_json[campaignTrail_temp.answer_score_global_json.length - 1];
+    const newEntry = JSON.parse(JSON.stringify(lastEntry)); // Clone the last entry
+
+    newEntry.fields.affected_candidate = affectedCandidate;
+    newEntry.fields.answer = answer;
+    newEntry.fields.global_multiplier = changeAmount;  // Overwrite global_multiplier with changeAmount
+
+    campaignTrail_temp.answer_score_global_json.push(newEntry);
+  }
+}
+
+function answerSwapper(pk1, pk2, takeEffects = true, considerTooltips = true) {
+    const answerData = campaignTrail_temp.answers_json;
+
+    const index1 = answerData.findIndex(item => item.pk === pk1);
+    const index2 = answerData.findIndex(item => item.pk === pk2);
+
+    if (index1 === -1 || index2 === -1) {
+        return;
+    }
+
+    let description1 = answerData[index1].fields.originalDescription || answerData[index1].fields.description;
+    let description2 = answerData[index2].fields.originalDescription || answerData[index2].fields.description;
+
+    if (answerData[index1].fields.originalDescription || answerData[index2].fields.originalDescription) {
+        answerData[index1].fields.originalDescription = description2;
+        answerData[index2].fields.originalDescription = description1;
+    }
+
+    answerData[index1].fields.description = description2;
+    answerData[index2].fields.description = description1;
+
+    if (considerTooltips) {
+        reapplyTooltips(answerData[index1]);
+        reapplyTooltips(answerData[index2]);
+    }
+
+    campaignTrail_temp.answer_feedback_json.forEach(item => {
+        if (item.fields.answer === pk1) {
+            item.fields.answer = pk2;
+        } else if (item.fields.answer === pk2) {
+            item.fields.answer = pk1;
+        }
+    });
+
+    if (takeEffects) {
+        const otherJsons = [
+            campaignTrail_temp.answer_score_global_json,
+            campaignTrail_temp.answer_score_issue_json,
+            campaignTrail_temp.answer_score_state_json
+        ];
+
+        otherJsons.forEach(jsonData => {
+            jsonData.forEach(item => {
+                if (item.fields.answer === pk1) {
+                    item.fields.answer = pk2;
+                } else if (item.fields.answer === pk2) {
+                    item.fields.answer = pk1;
+                }
+            });
+        });
+    }
+}
+
+function switcheroo_coup() {
+    e.candidate_json[0].fields.color_hex = "#51534E" ;
+}
 
 campaignTrail_temp.multiple_endings=true
 endingPicker = (out, totv, aa, quickstats) => {
@@ -13451,7 +13585,20 @@ endingPicker = (out, totv, aa, quickstats) => {
 	
 	music_end()
 	
-	if ( (RainbowDemocracy) && AmericanTrilogy )  { 
+	if ( InfinitaTristeza )  { 
+		setMusic("https://od.lk/s/Nl8yMTA1NTQ0NTFf/The%20Ride%20of%20the%20Valkyries.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/kSsB8gU.jpeg";
+                    }
+                }, 100);
+            }
+	return "<h3>Falling Down</h3><p>\"<i>\Talk of imminent threat to our national security through the application of external force is pure nonsense.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"Civil liberty and this kind of martial law cannot endure together; the antagonism is irreconcilable; and, in the conflict, one or the other must perish.\"</i> - <b>Ex parte Milligan</b></p><p></p><p><i>\"Army takeover on Puerto Rico-Martial Law declared.\"</i> - <b>Boston Herald</b></p><p>You sit huddled in your villa, considering your options, when the radio crackles: <i>\"We interrupt our programming; this is a national emergency. Stand by for further information.\"</i><p>You don't need to listen to understand what has happened. More and more aggrieved by the political situation in the country, reactionary forces have finally taken matters into their own hands. In the long-run, they've doomed themselves, but for now they have mastery of the land. The only option is to flee. <p>You exit your home through the back door, hoping to slip away unnoticed when a shot rings out. You stare down at your shirt, which begins to turn red."
+	}
+	else if ( (RainbowDemocracy) && AmericanTrilogy )  { 
 		setMusic("https://od.lk/s/Nl8yMTA1MjE1ODJf/Goin%27%20Home.mp3")
         if (used != true) {
                 setInterval(function () {
