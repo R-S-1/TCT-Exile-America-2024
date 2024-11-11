@@ -13746,7 +13746,50 @@ async function handleMutations(mutationsList, observer) {
 let singleObserver = new MutationObserver(handleMutations);
 singleObserver.observe(document.documentElement, { childList: true, subtree: true });
 
+e = campaignTrail_temp
+
+construct = (a = 1) => {
+  e.page = e.page + a < e.pages.length ? e.page + a : 0
+  let html = e.header;
+  html += e.pages[e.page] + "<br>";
+  if (e.page > 0) {
+    html += `<button onclick='endingConstructor(a = -1)'>Back</button>`
+  }
+  if (e.page < e.pages.length - 1) {
+    html += `<button onclick='endingConstructor(a = 1)'>Next</button>`
+  }
+
+  if (e.image == true)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0]
+      if (candImg) {
+        candImg.remove()
+        $("#final_results_description")[0].style = `
+          text-align:center;
+          width: 70%;
+          text-overflow: ellipsis;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        `
+      }
+    }, 10)
+  else if (e.image)
+  setTimeout(()=>{
+      candImg = $(".person_image")[0];
+      if (candImg)
+        candImg.src = e.image;
+    }, 10)
+
+  return html;
+}
+
+endingConstructor = (a = 1) => {
+  $("#final_results_description")[0].innerHTML = construct(a);
+}
+
 campaignTrail_temp.multiple_endings=true
+
 endingPicker = (out, totv, aa, quickstats) => {
 	e.final_overall_results.sort((a, b) => b.popular_votes - a.popular_votes);
 
@@ -13778,7 +13821,7 @@ endingPicker = (out, totv, aa, quickstats) => {
                     }
                 }, 100);
             }
-	return "<h3>Falling Down</h3><p>\"<i>\Talk of imminent threat to our national security through the application of external force is pure nonsense.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"Civil liberty and this kind of martial law cannot endure together; the antagonism is irreconcilable; and, in the conflict, one or the other must perish.\"</i> - <b>Ex parte Milligan</b></p><p></p><p><i>\"Army takeover on Puerto Rico-Martial Law declared.\"</i> - <b>Boston Herald</b></p><p>You sit huddled in your villa, considering your options, when the radio crackles: <i>\"We interrupt our programming; this is a national emergency. Stand by for further information.\"</i><p>You don't need to keep listening to understand what has happened. More and more aggrieved by political developments in the country, reactionary forces have finally taken matters into their own hands. In the long-run, they've doomed themselves. For now? It looks like they have mastery of the land. The only option is to flee. <p>You exit your home through the back door, hoping to slip away unnoticed, when a shot rings out. You stare down at your shirt as it begins to turn red."
+	return "<h3>Falling Down.</h3><p>\"<i>\Talk of imminent threat to our national security through the application of external force is pure nonsense.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"Civil liberty and this kind of martial law cannot endure together; the antagonism is irreconcilable; and, in the conflict, one or the other must perish.\"</i> - <b>Ex parte Milligan</b></p><p></p><p><i>\"Army takeover on Puerto Rico-Martial Law declared.\"</i> - <b>Boston Herald</b></p><p>You sit huddled in your villa, considering your options, when the radio crackles: <i>\"We interrupt our programming; this is a national emergency. Stand by for further information.\"</i><p>You don't need to keep listening to understand what has happened. More and more aggrieved by political developments in the country, reactionary forces have finally taken matters into their own hands. In the long-run, they've doomed themselves. For now? It looks like they have mastery of the land. The only option is to flee. <p>You exit your home through the back door, hoping to slip away unnoticed, when a shot rings out. You stare down at your shirt as it begins to turn red."
 	}
 	else if ( ElPresidente )  { 
 		setMusic("https://od.lk/s/Nl8yMTA1NjA3OTBf/Four_Ruffles_and_Flourishes_and_Hail_to_the_Chief.mp3")
@@ -13911,6 +13954,9 @@ endingPicker = (out, totv, aa, quickstats) => {
 		setMusic("https://od.lk/s/Nl8yMTAzNjQ2MThf/Puerto%20Rico.mp3")
   }
 }
+
+e.multiple_endings=true
+
 
 setMusic = (url, override = false) => {
     let aud;
