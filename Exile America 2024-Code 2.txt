@@ -13514,6 +13514,12 @@ cyoAdventure = function (a) {
 	 if( ans == 51221) {
         campaignTrail_temp.candidate_json[0]["fields"].first_name = "Rogue Officers -";
         campaignTrail_temp.candidate_json[0]["fields"].last_name = "Military Junta";
+		campaignTrail_temp.candidate_json[2]["fields"].first_name = "Juan Dalmau -";
+        campaignTrail_temp.candidate_json[2]["fields"].last_name = "Democratic Opposition";
+		campaignTrail_temp.candidate_json[4]["fields"].first_name = "Comité de Acción -";
+        campaignTrail_temp.candidate_json[4]["fields"].last_name = "Carlist Requeté";
+		campaignTrail_temp.candidate_json[5]["fields"].first_name = "Mexican Intelligence -";
+        campaignTrail_temp.candidate_json[5]["fields"].last_name = "Leftist Insurgents";
 		switcheroo_coup();
         campaignTrail_temp.question_number = 25;
     }
