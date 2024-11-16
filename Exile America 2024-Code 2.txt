@@ -85,7 +85,7 @@
 			"pk": 1009,
 			"fields": {
 				"priority": 5,
-				"description": "Disaffected members of the Pan-Blue satellite parties have called on their supporters to vote for Javier Jiménez of the Carlist Party instead of the PB. Any response?",
+				"description": "Disaffected members of the Pan-Blue satellite parties have called on their supporters to vote for Joanne Rodríguez Veve of the Carlist Party instead of the PB. Any response?",
 				"likelihood": 1
 			}
 		},
@@ -378,7 +378,7 @@
 			"pk": 5024,
 			"fields": {
 				"question": 1009,
-				"description": "Jiménez is a medieval throwback. He belongs in Don Quixote, not La Fortaleza."
+				"description": "Rodríguez Veve is a medieval throwback. She belongs in Don Quixote, not La Fortaleza."
 			}
 		},
 		{
@@ -12329,7 +12329,7 @@
 			"fields": {
 				"answer": 5024,
 				"candidate": 200,
-				"answer_feedback": "Jiménez's focus on local rights and rural communities is appealing to people in the interior. Underestimate his ability to act as a spoiler at your peril."
+				"answer_feedback": "Rodríguez Veve's focus on local rights and rural communities is appealing to people in the interior. Underestimate his ability to act as a spoiler at your peril."
 			}
 		},
 		{
