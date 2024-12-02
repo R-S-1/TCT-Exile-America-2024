@@ -12329,7 +12329,7 @@
 			"fields": {
 				"answer": 5024,
 				"candidate": 200,
-				"answer_feedback": "Rodríguez Veve's focus on local rights and rural communities is appealing to people in the interior. Underestimate his ability to act as a spoiler at your peril."
+				"answer_feedback": "Rodríguez Veve's focus on local rights and rural communities is appealing to people in the interior. Underestimate her ability to act as a spoiler at your peril."
 			}
 		},
 		{
@@ -13807,14 +13807,6 @@ endingPicker = (out, totv, aa, quickstats) => {
         //out = "win", "loss", or "tie" for your candidate
         //totv = total votes in entire election
         //aa = all final overall results data
-		
-		
-	music_end = function() {
-    document.getElementById("campaigntrailmusic").pause()
-    document.getElementById("music_player").style.display = "none"
-	}
-	
-	music_end()
 	
 	if ( InfinitaTristeza )  { 
 		setMusic("https://od.lk/s/Nl8yMTA1NTQ0NTFf/The%20Ride%20of%20the%20Valkyries.mp3")
@@ -13981,7 +13973,7 @@ setMusic = (url, override = false) => {
     aud = document.createElement("audio");
     aud.id = "endingAudio";
     aud.src = url;
-    aud.loop = false;
+    aud.loop = true;
     aud.autoplay = true;
     document.body.appendChild(aud);
     aud.play();
