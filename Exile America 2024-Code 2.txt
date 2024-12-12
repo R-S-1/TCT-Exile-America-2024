@@ -1010,7 +1010,7 @@
 			"pk": 5117,
 			"fields": {
 				"question": 1034,
-				"description": "Mexico this and Midwest that. Maybe someone was just tired of these clowns and decided to blow the whistle?"
+				"description": "Mexicans this and Midwest that. Maybe someone was just tired of these clowns and decided to blow the whistle?"
 			}
 		},
 		{
@@ -13149,6 +13149,7 @@
 
 		return matches;
 	}
+	
 	function applyTooltips(str) {
 		const matches = getTooltips(str);
 		let result = '';
@@ -13178,6 +13179,8 @@
 	applyTooltipsToObject(campaignTrail_temp.questions_json);
 	applyTooltipsToObject(campaignTrail_temp.answers_json);
 	applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+	applyTooltipsToObject(extraQuestions);
+
 
 var AmericanTrilogyPrecondition = false;
 var AmericanTrilogy = false;
