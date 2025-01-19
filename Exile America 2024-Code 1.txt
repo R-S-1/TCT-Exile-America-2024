@@ -334,6 +334,10 @@ tooltipList = [
 		{
           "name": "La Borinqueña",
           "url": "https://od.lk/s/Nl8yMDk2NzI1MTdf/La_Borinque%C3%B1a-1860s_Arrangement.mp3"
+        },
+		{
+          "name": "St. Thomas",
+          "url": "https://od.lk/s/MTVfNjUyMTI3OTNf/St%20Thomas.mp3"
         }
       ]
     },

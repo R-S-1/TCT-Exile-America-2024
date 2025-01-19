@@ -1138,7 +1138,15 @@
 			"pk": 51291,
 			"fields": {
 				"question": 160001,
-				"description": "Was it something I said?"
+				"description": "Jiménez is our only hope of winning back religious voters."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 51292,
+			"fields": {
+				"question": 160001,
+				"description": "We need an Anglo. Get Bergman."
 			}
 		}
 	]
@@ -10184,6 +10192,16 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30791,
+			"fields": {
+				"answer": 51292,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3112,
 			"fields": {
 				"answer": 5048,
@@ -11682,7 +11700,7 @@
 				"answer": 51281,
 				"issue": 103,
 				"issue_score": -0.65,
-				"issue_importance": 1
+				"issue_importance": 2
 			}
 		},
 		{
@@ -11692,6 +11710,16 @@
 				"answer": 51281,
 				"issue": 104,
 				"issue_score": -0.25,
+				"issue_importance": 1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26263,
+			"fields": {
+				"answer": 51291,
+				"issue": 103,
+				"issue_score": -0.4,
 				"issue_importance": 1
 			}
 		},
@@ -12192,6 +12220,17 @@
 			"candidate": 200, 
 			"affected_candidate": 200, 
 			"state_multiplier": 0.05
+			}
+		},
+		{
+		"model": "campaign_trail.answer_score_state", 
+		"pk": 512921, 
+		"fields": {
+			"answer": 51292, 
+			"state": 20954, 
+			"candidate": 200, 
+			"affected_candidate": 200, 
+			"state_multiplier": 0.1
 			}
 		}
 	]
@@ -13227,7 +13266,8 @@ var caesarism_answers = 0;
 var karen_mad_answers = 0; 
 
 image_dict = {
-	"Bergman": "https://i.imgur.com/1ErPpUU.jpeg",
+	"Jiménez": "https://i.imgur.com/kv5XQt4.jpeg",
+	"Bergman": "https://i.imgur.com/XimKfyS.jpeg",
 }
 
 questionSheath = [
@@ -13629,6 +13669,11 @@ cyoAdventure = function (a) {
     }
 	if (ans == 51291) {
 		if ( KarenLeft )
+		PB_running_mate = "Jiménez";
+		PB_running_mate_url = image_dict["Jiménez"];
+	}
+	if (ans == 51292) {
+		if ( KarenLeft )
 		PB_running_mate = "Bergman";
 		PB_running_mate_url = image_dict["Bergman"];
 	}
@@ -13637,7 +13682,7 @@ cyoAdventure = function (a) {
 		PB_running_mate = "Hawley";
 		PB_running_mate_url = image_dict["hawley"]
 	}
-	if ( ans == 51291 || ans == 160002 ) {
+	if ( ans == 51291 || ans == 51292 || ans == 160002 ) {
 		campaignTrail_temp.running_mate_last_name = PB_running_mate;
 		campaignTrail_temp.running_mate_image_url = PB_running_mate_url;
 	}
