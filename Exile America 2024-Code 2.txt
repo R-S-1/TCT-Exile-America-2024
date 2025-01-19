@@ -1132,6 +1132,14 @@
 				"question": 10381,
 				"description": "Faith pays off!"
 			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 51291,
+			"fields": {
+				"question": 160001,
+				"description": "Was it something I said?"
+			}
 		}
 	]
 
@@ -10166,6 +10174,16 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30791,
+			"fields": {
+				"answer": 51291,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.1
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3112,
 			"fields": {
 				"answer": 5048,
@@ -13192,6 +13210,8 @@ var RastasEndorsed = false;
 var DixieNormal = false;
 var InfinitaTristeza = false; 
 var ElPresidente = false;  
+var KarenLeft = false; 
+var CarlistCooperation = false; 
 
 e.cyoa = true;
 
@@ -13203,7 +13223,12 @@ var prot_endorse_answers = 0;
 var interfaith_answers = 0;
 var infinita_tristeza_answers = 0;
 var dixie_normalisation_answers = 0;
-var caesarism_answers = 0;
+var caesarism_answers = 0; 
+var karen_mad_answers = 0; 
+
+image_dict = {
+	"Bergman": "https://i.imgur.com/1ErPpUU.jpeg",
+}
 
 questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10220, 'fields': {'priority': 1, 'description': 'One of the most controversial parts of the services sector is the so-called \"passport trade\", where San Juan based law firms facilitate the acquisition of 2nd nationalities by questionable figures using citizenship by investment schemes in Puerto Rico and other states. The practice is routinely condemned by both the PB and NPP, but has persisted due to intense lobbying. Will you make a statement on the issue?', 'likelihood': 1}},
@@ -13220,6 +13245,7 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10341, 'fields': {'priority': 1, 'description': 'Ahead of the elections, various faith and community leaders have banded together to publish an open letter calling on their communities to vote for you in the upcoming election. While not outright critical of Dalmau himself, they contrast the NPP’s policies with your own and conclude that only you can maintain the \"multicultural\" character of Puerto Rico.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10361, 'fields': {'priority': 1, 'description': 'Shots ring out in the street and the lights begin to flicker. From your terrace, you see APCs rolling down streets and hear sirens going off. Then the power cuts out.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10251, 'fields': {'priority': 1, 'description': 'Taking note of your recent statements, a group of dissatisfied intelligence and army officers have approached you with a deal. In exchange for positions in your new administration, they will leverage their connections and funding to assist you in securing the votes you need to not just win, but reshape the country in your vision. <br><br>It goes without saying that this is a deal with the devil.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 160001, 'fields': {'priority': 1, 'description': 'Citing irreconcilable differences of vision and perceived mistreatment, Karen has quit the campaign. We are now scrambling to find a replacement and do as much damage control as possible.', 'likelihood': 1}}
 ]
 
 getQuestionFromPk = function (pk) {
@@ -13477,9 +13503,12 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5000) {
         infinita_tristeza_answers++
+		karen_mad_answers++
 		console.log("Virgin Islander")
 		console.log("infinita_tristeza_answers count:")
         console.log(infinita_tristeza_answers)
+		console.log("karen_mad_answers count:")
+        console.log(karen_mad_answers)
     }
 	if (ans === 5013) {
         infinita_tristeza_answers++
@@ -13495,9 +13524,12 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5066) {
         infinita_tristeza_answers++
+		karen_mad_answers++
 		console.log("No Stooge")
 		console.log("infinita_tristeza_answers count:")
         console.log(infinita_tristeza_answers)
+		console.log("karen_mad_answers count:")
+        console.log(karen_mad_answers)
     }
 	if (ans === 5035) {
         infinita_tristeza_answers++
@@ -13581,6 +13613,34 @@ cyoAdventure = function (a) {
 		console.log("caesarism_answers count")   
 		console.log(caesarism_answers)
     }
+	if (ans === 5129) {
+        karen_mad_answers++
+		console.log("Didn’t back")
+		console.log("karen_mad_answers count:")
+        console.log(karen_mad_answers)
+    }
+	if ( ( karen_mad_answers === 3 ) && !KarenLeft ) {
+		e.questions_json.splice(15, 0 , getQuestionFromPk(160001))
+        e.global_parameter_json[0].fields.question_count++
+		KarenLeft = true;
+        console.log("karen_mad_answers") 
+		console.log("karen_mad_answers count")   
+		console.log(karen_mad_answers)
+    }
+	if (ans == 51291) {
+		if ( KarenLeft )
+		PB_running_mate = "Bergman";
+		PB_running_mate_url = image_dict["Bergman"];
+	}
+	if (ans == 160002) {
+		if ( CarlistCooperation )
+		PB_running_mate = "Hawley";
+		PB_running_mate_url = image_dict["hawley"]
+	}
+	if ( ans == 51291 || ans == 160002 ) {
+		campaignTrail_temp.running_mate_last_name = PB_running_mate;
+		campaignTrail_temp.running_mate_image_url = PB_running_mate_url;
+	}
 	if (ans === 5112 && campaignTrail_temp.player_answers.includes(5067)) {
 		updateFeedback(2596, "The contradiction between your hardline stance on drugs and your own personal history opens you up to scathing attacks by Dalmau’s camp.") 
 		changeGlobalEffect(200, 3072, -0.15)
@@ -13914,7 +13974,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             }
 	return "<h3>Glory, Glory, Hallelujah!</h3><p>\"<i>\Even when opportunity knocks, a man still has to get up off his seat and open the door.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"O’Malley election confirmed by Supreme Court after stand-off, tensions begin to dissipate.\"</i> - <b>San Juan Star</b></p><p><i>\"Texans express interest in free movement, common market.\"</i> - <b>International Herald Tribune</b></p><p><i>\"CS opens Restitution Tribunal, émigrés begin filing claims.\"</i> - <b>Christian Science Monitor</b></p><p>At 12:00, 4 July, 2025, the pall bearers lift the casket from its funerary carriage and carry it to its final destination.<p>After more than 80 years in exile, Douglas MacArthur has at last arrived in Arlington. With more than half the heads of state in America in attendance and an aged Arthur MacArthur watching from a wheelchair, Presidents Grammer and Crist raise their respective flags to flutter in the summer breeze.<p>The old United States may be buried, but for the first time since the Civil War, its people seem to be on the road to another union."
 	}
-	else if (quickstats[1] >= 60) {
+	else if (quickstats[1] >= 56) {
             if (used != true) {
                 setInterval(function () {
                     used = true;
