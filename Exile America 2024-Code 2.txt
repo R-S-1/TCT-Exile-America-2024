@@ -935,6 +935,38 @@
 		},
 		{
 			"model": "campaign_trail.answer",
+			"pk": 51001,
+			"fields": {
+				"question": 10292,
+				"description": "This all seems a little too medieval for my taste, but what’s the harm. Let’s do it."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 51002,
+			"fields": {
+				"question": 10292,
+				"description": "Will they be wanting us to swear oaths under an oak tree next? This is ridiculous."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 51003,
+			"fields": {
+				"question": 10293,
+				"description": "If that’s what it takes, let’s do it. Maybe the princess will make me a knight at the end of this fairy tale."
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
+			"pk": 51004,
+			"fields": {
+				"question": 10293,
+				"description": "What do you think this is, 1815?"
+			}
+		},
+		{
+			"model": "campaign_trail.answer",
 			"pk": 5101,
 			"fields": {
 				"question": 1030,
@@ -10022,6 +10054,66 @@
 		},
 		{
 			"model": "campaign_trail.answer_score_global",
+			"pk": 30593,
+			"fields": {
+				"answer": 51001,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30594,
+			"fields": {
+				"answer": 51002,
+				"candidate": 200,
+				"affected_candidate": 202,
+				"global_multiplier": 0.005
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30595,
+			"fields": {
+				"answer": 51003,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": 0.3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30596,
+			"fields": {
+				"answer": 51003,
+				"candidate": 200,
+				"affected_candidate": 202,
+				"global_multiplier": -1.0
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30597,
+			"fields": {
+				"answer": 51004,
+				"candidate": 200,
+				"affected_candidate": 200,
+				"global_multiplier": -0.05
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
+			"pk": 30598,
+			"fields": {
+				"answer": 51004,
+				"candidate": 200,
+				"affected_candidate": 202,
+				"global_multiplier": 0.05
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_global",
 			"pk": 3062,
 			"fields": {
 				"answer": 5102,
@@ -11561,6 +11653,56 @@
 				"issue": 104,
 				"issue_score": 0.2,
 				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26073,
+			"fields": {
+				"answer": 51001,
+				"issue": 100,
+				"issue_score": 0.2,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26074,
+			"fields": {
+				"answer": 51001,
+				"issue": 103,
+				"issue_score": -0.3,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26075,
+			"fields": {
+				"answer": 51003,
+				"issue": 100,
+				"issue_score": 0.4,
+				"issue_importance": 3
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26076,
+			"fields": {
+				"answer": 51003,
+				"issue": 102,
+				"issue_score": 0.2,
+				"issue_importance": 2
+			}
+		},
+		{
+			"model": "campaign_trail.answer_score_issue",
+			"pk": 26077,
+			"fields": {
+				"answer": 51003,
+				"issue": 103,
+				"issue_score": -0.5,
+				"issue_importance": 3
 			}
 		},
 		{
@@ -13247,9 +13389,11 @@ var RainbowDemocracy = false;
 var ProtsEndorsed = false;
 var RastasEndorsed = false;
 var DixieNormal = false;
-var InfinitaTristeza = false; 
+var InfinitaTristeza = false;
+var ElPresidentePrecondition = false;
 var ElPresidente = false;  
 var KarenLeft = false; 
+var CarlistCooperationPrecondition = false;
 var CarlistCooperation = false; 
 
 e.cyoa = true;
@@ -13264,10 +13408,12 @@ var infinita_tristeza_answers = 0;
 var dixie_normalisation_answers = 0;
 var caesarism_answers = 0; 
 var karen_mad_answers = 0; 
+var carlist_cooperation_answers = 0; 
 
 image_dict = {
 	"Jiménez": "https://i.imgur.com/kv5XQt4.jpeg",
 	"Bergman": "https://i.imgur.com/XimKfyS.jpeg",
+	"Veve": "https://i.imgur.com/Yxn34A6.png",
 }
 
 questionSheath = [
@@ -13285,7 +13431,9 @@ questionSheath = [
 {'model': 'campaign_trail.question', 'pk': 10341, 'fields': {'priority': 1, 'description': 'Ahead of the elections, various faith and community leaders have banded together to publish an open letter calling on their communities to vote for you in the upcoming election. While not outright critical of Dalmau himself, they contrast the NPP’s policies with your own and conclude that only you can maintain the \"multicultural\" character of Puerto Rico.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10361, 'fields': {'priority': 1, 'description': 'Shots ring out in the street and the lights begin to flicker. From your terrace, you see APCs rolling down streets and hear sirens going off. Then the power cuts out.', 'likelihood': 1}},
 {'model': 'campaign_trail.question', 'pk': 10251, 'fields': {'priority': 1, 'description': 'Taking note of your recent statements, a group of dissatisfied intelligence and army officers have approached you with a deal. In exchange for positions in your new administration, they will leverage their connections and funding to assist you in securing the votes you need to not just win, but reshape the country in your vision. <br><br>It goes without saying that this is a deal with the devil.', 'likelihood': 1}},
-{'model': 'campaign_trail.question', 'pk': 160001, 'fields': {'priority': 1, 'description': 'Citing irreconcilable differences of vision and perceived mistreatment, Karen has quit the campaign. We are now scrambling to find a replacement and do as much damage control as possible.', 'likelihood': 1}}
+{'model': 'campaign_trail.question', 'pk': 160001, 'fields': {'priority': 1, 'description': 'Citing irreconcilable differences of vision and perceived mistreatment, Karen has quit the campaign. We are now scrambling to find a replacement and do as much damage control as possible.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10292, 'fields': {'priority': 1, 'description': 'In response to our commitment to rural development, the Carlists have once again floated their policy to restore the Laws of the Indies with all the self governance they entail. While a real restoration is an unworkable romanticist notion, the party has long made the promulgation of \"organic\" legal theory on Spanish & French lines a priority. <br><br>If we promise to organize an investigation into the role of the pre-civil code law on the island, we may succeed in winning over some traditional rural communities.', 'likelihood': 1}},
+{'model': 'campaign_trail.question', 'pk': 10293, 'fields': {'priority': 1, 'description': 'Our fixer in Guantamno Bay has received an interesting offer forwarded via the office of Viceroy Castro. In return for accepting Rodríguez Veve as our running mate and committing to elements of the Carlist Program, the party will withdraw from the campaign and endorse Grammer for president. <br><br>Accepting the offer would be a radical departure from our old platform and be seen as a betrayal by some in the American community, but will likely win us the election and lock down the iron voters for good.', 'likelihood': 1}}
 ]
 
 getQuestionFromPk = function (pk) {
@@ -13422,9 +13570,12 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5042) {
         mitteleuropa_agrideal_answers++
+		carlist_cooperation_answers++
 		console.log("YIMBY")
 		console.log("mitteleuropa_agrideal_answers count:")
         console.log(mitteleuropa_agrideal_answers)
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
     }
 	if ( ( mitteleuropa_agrideal_answers === 3 ) && !MitteleuropaAgriDeal ) {
         e.questions_json.splice(22, 0 , getQuestionFromPk(10291))
@@ -13482,11 +13633,14 @@ cyoAdventure = function (a) {
 	if (ans === 5019) {
         prot_endorse_answers++
 		interfaith_answers++
+		carlist_cooperation_answers++
 		console.log("Interfaith")
 		console.log("interfaith_answers count:")
         console.log(interfaith_answers)
 		console.log("prot_endorse_answers count:")
         console.log(prot_endorse_answers)
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
     }
 	if (ans === 5128) {
         prot_endorse_answers++
@@ -13629,9 +13783,12 @@ cyoAdventure = function (a) {
     }
 	if (ans === 5074) {
         caesarism_answers++
+		carlist_cooperation_answers++
 		console.log("Autarky")
 		console.log("caesarism_answers count:")
         console.log(caesarism_answers)
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
     }
 	if (ans === 5084) {
         caesarism_answers++
@@ -13645,10 +13802,10 @@ cyoAdventure = function (a) {
 		console.log("caesarism_answers count:")
         console.log(caesarism_answers)
     }
-	if ( ( caesarism_answers === 8 ) && !ElPresidente ) {
+	if ( ( caesarism_answers === 8 ) && !ElPresidentePrecondition ) {
 		e.questions_json.splice(23, 0 , getQuestionFromPk(10251))
         e.global_parameter_json[0].fields.question_count++
-		ElPresidente = true;
+		ElPresidentePrecondition = true;
         console.log("caesarism_answers") 
 		console.log("caesarism_answers count")   
 		console.log(caesarism_answers)
@@ -13667,22 +13824,71 @@ cyoAdventure = function (a) {
 		console.log("karen_mad_answers count")   
 		console.log(karen_mad_answers)
     }
-	if (ans == 51291) {
+	if (ans === 51291) {
 		if ( KarenLeft )
 		PB_running_mate = "Jiménez";
 		PB_running_mate_url = image_dict["Jiménez"];
 	}
-	if (ans == 51292) {
+	if (ans === 51292) {
 		if ( KarenLeft )
 		PB_running_mate = "Bergman";
 		PB_running_mate_url = image_dict["Bergman"];
 	}
-	if (ans == 160002) {
+	if (ans === 5026) {
+        carlist_cooperation_answers++
+		console.log("Localist")
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
+    }
+	if (ans === 5100) {
+        carlist_cooperation_answers++
+		console.log("Agrarian assistance")
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
+    }
+	if (ans === 5067) {
+        carlist_cooperation_answers++
+		console.log("Narc")
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
+    }
+	if (ans === 5115) {
+        carlist_cooperation_answers++
+		console.log("Rural Rebuilding")
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
+    }
+	if (ans === 5100 ) {
+        e.questions_json.splice(22, 0 , getQuestionFromPk(10292))
+        e.global_parameter_json[0].fields.question_count++
+        console.log("Indies Law")   
+        console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
+    }
+	if (ans === 51001) {
+        carlist_cooperation_answers++
+		console.log("Legal Scholar")
+		console.log("carlist_cooperation_answers count:")
+        console.log(carlist_cooperation_answers)
+    }
+	if ( ( carlist_cooperation_answers === 8 ) && !CarlistCooperationPrecondition ) {
+		e.questions_json.splice(26, 0 , getQuestionFromPk(10293))
+        e.global_parameter_json[0].fields.question_count++
+		CarlistCooperationPrecondition = true;
+        console.log("carlist_cooperation_answers") 
+		console.log("carlist_cooperation_answers count")   
+		console.log(carlist_cooperation_answers)
+    }
+	if (ans === 5046) {
+		CarlistCooperation = true;
+		console.log("Carlist Cooperation ending") 
+    }
+	if (ans === 51003 ) {
 		if ( CarlistCooperation )
-		PB_running_mate = "Hawley";
-		PB_running_mate_url = image_dict["hawley"]
+		PB_running_mate = "Rodríguez Veve";
+		PB_running_mate_url = image_dict["Veve"]
 	}
-	if ( ans == 51291 || ans == 51292 || ans == 160002 ) {
+	if (ans == 51291 || ans == 51292 || ans == 51003) {
 		campaignTrail_temp.running_mate_last_name = PB_running_mate;
 		campaignTrail_temp.running_mate_image_url = PB_running_mate_url;
 	}
