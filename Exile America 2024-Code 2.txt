@@ -13879,14 +13879,16 @@ cyoAdventure = function (a) {
 		console.log("carlist_cooperation_answers count")   
 		console.log(carlist_cooperation_answers)
     }
-	if (ans === 5046) {
+	if (ans === 51003) {
 		CarlistCooperation = true;
 		console.log("Carlist Cooperation ending") 
     }
 	if (ans === 51003 ) {
 		if ( CarlistCooperation )
-		PB_running_mate = "Rodríguez Veve";
+		PB_running_mate = "Rodríguez";
 		PB_running_mate_url = image_dict["Veve"]
+		campaignTrail_temp.candidate_json[4]["fields"].first_name = "Write In -";
+        campaignTrail_temp.candidate_json[4]["fields"].last_name = "Carlist Irreconcilables";
 	}
 	if (ans == 51291 || ans == 51292 || ans == 51003) {
 		campaignTrail_temp.running_mate_last_name = PB_running_mate;
@@ -14134,14 +14136,27 @@ endingPicker = (out, totv, aa, quickstats) => {
             }
 	return "<h3>Falling Down.</h3><p>\"<i>\Talk of imminent threat to our national security through the application of external force is pure nonsense.\"</i> - <b>Douglas MacArthur</b></p><p><i>\"Civil liberty and this kind of martial law cannot endure together; the antagonism is irreconcilable; and, in the conflict, one or the other must perish.\"</i> - <b>Ex parte Milligan</b></p><p></p><p><i>\"Army takeover on Puerto Rico-Martial Law declared.\"</i> - <b>Boston Herald</b></p><p>You sit huddled in your villa, considering your options, when the radio crackles: <i>\"We interrupt our programming; this is a national emergency. Stand by for further information.\"</i><p>You don't need to keep listening to understand what has happened. More and more aggrieved by political developments in the country, reactionary forces have finally taken matters into their own hands. In the long-run, they've doomed themselves. For now? It looks like they have mastery of the land. The only option is to flee. <p>You exit your home through the back door, hoping to slip away unnoticed, when a shot rings out. You stare down at your shirt as it begins to turn red."
 	}
-	else if ( ElPresidente )  { 
+	else if ( CarlistCooperation )  { 
 		setMusic("https://od.lk/s/Nl8yMTA1NjA3OTBf/Four_Ruffles_and_Flourishes_and_Hail_to_the_Chief.mp3")
         if (used != true) {
                 setInterval(function () {
                     used = true;
                     imgg = document.getElementsByClassName("person_image")[0];
                     if (imgg != null) {
-                        imgg.src = "https://i.imgur.com/9CfV7N9.png";
+                        imgg.src = "https://i.imgur.com/cduot9s.jpeg";
+                    }
+                }, 100);
+            }
+	return "<h3>Dios, Patria, Rey?</h3><p>\"<i>\We shall fight together, all together, all together in union, defending the banner of Sacred Tradition\"</i> - <b>March of Oriamendi</b></p><p><i>\"Providence will not permit that in these countries which were discovered by the Spanish nation the echo of our language should ever cease to be heard, nor that our flag should disappear before the eyes.\"</i> - <b>Manuel Macías y Casado</b></p><p></p><p><i>\"Congress pass non-binding resolution to recognize Grammer's right to take up Grandee title.\"</i> - <b>International Herald Tribune</b></p><p>Your cooperation with the Carlists is a political earthquake. You succeed in locking down the countryside and galvanizing the majority of the island, much to the chagrin of both Independentists and a horrified Exile Establishment. While a few PB legislators defect to a new <i>\"Constitution Party\"</i>, many ultraconservatives are satisfied with your new particularist vision. The remaining secularists have consolidated under an infernal alliance between the NPP and the PB's liberal wing, but their future prospects are negligible.<p>In the mean time, the upswing in relations with Spain holds a promise of a fresh start with the Entente. Legislative changes are likely to be slow, even if few admit that the Organic vision of Carlism already mirrors the post-Civil War constitutional patchwork. While the formal seperation of church and state is unlikely to disappear and you will never become a prime minister, appeals to Hispanophone values, including the presence of cabinet members at Catholic services are now very much in vogue. <p>La Fortaleza is well worth a mass."
+	}
+	else if ( ElPresidente )  { 
+		setMusic("https://od.lk/s/MTVfNjU0NjM2Nzhf/Spanish%20Capriccio-No%204.mp3")
+        if (used != true) {
+                setInterval(function () {
+                    used = true;
+                    imgg = document.getElementsByClassName("person_image")[0];
+                    if (imgg != null) {
+                        imgg.src = "https://i.imgur.com/J97qaY3.png";
                     }
                 }, 100);
             }
